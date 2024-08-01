@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 350vh;
+  
+  background-image: url('../src/image/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 2rem auto;
+}

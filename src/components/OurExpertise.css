@@ -1,0 +1,76 @@
+/* src/components/OurExpertise.css */
+.our-expertise-section {
+  padding: 4rem 0;
+  background: url('../image/bg.png') no-repeat center center/cover; /* Ensure your background image path is correct */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #E9E9E9;
+}
+
+.slick-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.expertise-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.expertise-image {
+  margin-bottom: 1rem;
+}
+
+.expertise-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.expertise-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.expertise-content p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #0056b3;
+}

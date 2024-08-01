@@ -1,0 +1,61 @@
+.slide {
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 350px;
+  margin: auto;
+}
+
+.slide:hover {
+  transform: scale(1.05); /* Hover effect */
+  transition: transform 0.3s ease;
+}
+
+.slide h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.slide p {
+  margin-bottom: 1.5rem;
+}
+
+.slide button {
+  background: #007BFF;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slide button:hover {
+  background: #0056b3;
+}
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.custom-dot.slick-active {
+  background: #007BFF;
+}
+
+.custom-dots {
+  bottom: -30px;
+}
+
+.card-image {
+  width: 80%;
+  margin-bottom: 1rem;
+}
