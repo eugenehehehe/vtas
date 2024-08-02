@@ -53,6 +53,8 @@ const SliderComponent = () => {
           managing your assets. Our comprehensive services
           ensure that you leverage the full potential of RFID
           technology for your business operations.</p>
+          <br />
+          <br />
         <button>Learn More</button>
       </div>
     </Slider>
