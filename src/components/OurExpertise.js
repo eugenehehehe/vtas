@@ -63,7 +63,7 @@ const OurExpertise = () => {
       title: "Custom Application Development",
       description:
         "At Visual Tech Asia, we craft bespoke mobile and web applications designed to meet your unique business needs. Our dedicated team of developers and designers leverage the latest technologies to deliver high-quality, scalable, and user-friendly applications.",
-      link: "#",
+      link: "custom-application-development",
     },
     {
       image: rfid,

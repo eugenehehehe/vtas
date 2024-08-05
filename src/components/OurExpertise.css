@@ -1,7 +1,8 @@
-/* src/components/OurExpertise.css */
 .our-expertise-section {
   padding: 4rem 0;
-  background: url('../image/bg.png') no-repeat center center/cover; /* Ensure your background image path is correct */
+
+  background-size: cover;
+  color: #fff;
 }
 
 .container {
@@ -29,7 +30,7 @@
 }
 
 .expertise-card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -37,6 +38,8 @@
   margin: 0 auto;
   text-align: center;
   padding: 2rem;
+  backdrop-filter: blur(10px);
+  color: #fff;
 }
 
 .expertise-image {
@@ -73,4 +76,16 @@
 
 .learn-more:hover {
   background-color: #0056b3;
+}
+
+.custom-arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.custom-arrow:hover {
+  color: #007bff;
 }

@@ -51,7 +51,7 @@ const SliderComponent = () => {
         <p>Visual Tech Asia offers cutting-edge RFID solutions that
           enhance efficiency and accuracy in tracking and
           managing your assets. Our comprehensive services
-          ensure that you leverage the full potential of RFID
+          ensure that you leverage the full potential of RFIDsssssssssssssssssssssssssssssssss 
           technology for your business operations.</p>
           <br />
           <br />
