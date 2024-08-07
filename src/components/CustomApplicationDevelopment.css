@@ -5,13 +5,6 @@ body {
   padding: 0;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
 .custom.bg {
   min-height: 350vh;
   background-image: url('../image/customappdev.png');
@@ -64,7 +57,7 @@ body {
 
 .steps {
   display: flex;
-  margin-top: 22rem;
+  margin-top: 24rem;
   flex-direction: column;
   gap: 8rem;
 }
