@@ -19,9 +19,7 @@ html, body {
   transform: translateX(-50%);
   z-index: 1000;
   margin-top: 2rem;
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fnoise-texture&psig=AOvVaw0rzPpQsNHIG_fDtX27CLp6&ust=1723016495083000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID96eLu34cDFQAAAAAdAAAAABAI');
   background-size: cover;
-  background-blend-mode: overlay;
 }
 
 @media (max-width: 768px) {

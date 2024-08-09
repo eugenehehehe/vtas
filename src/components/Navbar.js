@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../image/VTAAA.png';
+import logo from '../image/VTAAA2.png';
 import flag from '../image/usflag.png';
 import flag2 from '../image/idnflag.png';
 import { FaChevronDown } from 'react-icons/fa';
 import './Navbar.css';
-import './CustomApplicationDevelopment'
+import './CustomApplicationDevelopment';
+import './RFID';
 
 const Navbar = () => {
     const [activeLanguage, setActiveLanguage] = useState('EN');
@@ -29,7 +30,9 @@ const Navbar = () => {
                         <Link to="/custom-application-development" className="dropdown-item">
                             Custom Application Development
                         </Link>
-                        <a href="#rfid" className="dropdown-item">RFID Solutions</a>
+                        <Link to="/rfid-solutions" className="dropdown-item">
+                            RFID Solutions
+                        </Link>
                     </div>
                 </div>
                 <a href="#services" className="nav-item">Our Services</a>

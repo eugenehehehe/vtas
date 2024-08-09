@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CustomApplicationDevelopment from './components/CustomApplicationDevelopment';
 
-// Create the root element
+import CustomApplicationDevelopment from './components/CustomApplicationDevelopment';
+import RFID from './components/RFID';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -14,11 +15,12 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/custom-application-development" element={<CustomApplicationDevelopment />} />
+      <Route path="/rfid-solutions" element={<RFID />} />
     </Routes>
   </BrowserRouter>
 );
 
-// Measure performance in your app
+
 reportWebVitals();
 
 

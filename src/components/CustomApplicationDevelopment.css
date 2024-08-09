@@ -7,7 +7,7 @@ body {
 
 .custom.bg {
   min-height: 350vh;
-  background-image: url('../image/customappdev.png');
+  background-image: url('../image/customappdev2.png');
   background-size: cover;
   margin: 0;
   padding-top: 240px;
@@ -28,7 +28,6 @@ body {
   color: #E9E9E9;
 }
 
-
 .section p {
   font-size: 18px;
   line-height: 21.04px;
@@ -44,7 +43,6 @@ body {
   font-weight: 800;
   font-size: 85px;
   line-height: 93.59px;
-
 }
 
 .subheading {
@@ -64,9 +62,22 @@ body {
 
 .step {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+}
+
+.step .text1 {
+  max-width: 600px;
+  text-align: left;
+  max-width: 785px;
+}
+
+.step .text2 {
+  max-width: 600px;
+  text-align: right;
+  max-width: 785px;
 }
 
 .step h2 {
@@ -74,25 +85,7 @@ body {
   margin-bottom: 1rem;
   color: #E9E9E9;
   font-weight: 800;
-}
-
-.left {
-  font-size: 17.43px;
-  line-height: 1.5;
-  max-width: 621.56px;
-  color: #EDEDED;
-  font-weight: 500;
-  text-align: left;
-
-}
-
-.right {
-  font-size: 17.43px;
-  line-height: 1.5;
-  max-width: 621.56px;
-  color: #EDEDED;
-  font-weight: 500;
-  text-align: right;
+  max-width: 785px;
 }
 
 .step p {
@@ -101,4 +94,34 @@ body {
   max-width: 600px;
   color: #E9E9E9;
   font-weight: 500;
+}
+
+.step img.icon {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50px;
+  background: radial-gradient(circle, #19174b 0%, #08062200 70%);
+  
+}
+
+
+.left-icon {
+  order: 0;
+}
+
+.right-icon {
+  order: 3;
+}
+
+.step:nth-child(even) .left-icon {
+  order: 3;
+}
+
+/* .step:nth-child(even) .right-icon {
+  order: 1;
+} */
+
+.step:nth-child(even) .text {
+  order: 2;
 }

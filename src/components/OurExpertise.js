@@ -70,7 +70,7 @@ const OurExpertise = () => {
       title: "RFID Solutions",
       description:
         "Visual Tech Asia offers cutting-edge RFID solutions that enhance efficiency and accuracy in tracking and managing your assets. Our comprehensive services ensure that you leverage the full potential of RFID technology for your business operations.",
-      link: "#",
+      link: "rfid-solutions",
     },
   ];
 

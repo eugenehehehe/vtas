@@ -1,0 +1,127 @@
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.custom.bg {
+  min-height: 350vh;
+  background-image: url('../image/RFIDbg.png');
+  background-size: cover;
+  margin: 0;
+  padding-top: 240px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.section {
+  margin-top: 6rem;
+  text-align: left;
+  padding-left: 15rem;
+  margin-bottom: 4rem;
+  color: #E9E9E9;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 21.04px;
+  max-width: 850px;
+  margin-top: 2rem;
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+}
+
+.heading {
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 85px;
+  line-height: 93.59px;
+}
+
+.subheading {
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 85px;
+  line-height: 93.59px;
+}
+
+.steps {
+  display: flex;
+  margin-top: 25rem;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.step .text1 {
+  max-width: 600px;
+  text-align: left;
+  max-width: 785px;
+}
+
+.step .text2 {
+  max-width: 600px;
+  text-align: right;
+  max-width: 785px;
+}
+
+.step h2 {
+  font-size: 54.32px;
+  margin-bottom: 1rem;
+  color: #E9E9E9;
+  font-weight: 800;
+  max-width: 785px;
+}
+
+.step p {
+  font-size: 17.43px;
+  line-height: 1.5;
+  max-width: 600px;
+  color: #E9E9E9;
+  font-weight: 500;
+}
+
+.step img.icon {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50px;
+  background: radial-gradient(circle, #19174b 0%, #08062200 70%);
+  
+}
+
+
+.left-icon {
+  order: 0;
+}
+
+.right-icon {
+  order: 3;
+}
+
+.step:nth-child(even) .left-icon {
+  order: 3;
+}
+
+/* .step:nth-child(even) .right-icon {
+  order: 1;
+} */
+
+.step:nth-child(even) .text {
+  order: 2;
+}

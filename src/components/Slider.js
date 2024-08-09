@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Slider.css';
-import cardImage1 from '../image/ERP.png';
-import cardImage2 from '../image/custom-appdev.png';
-import cardImage3 from '../image/RFID.png';
+import ERP from '../image/ERP.png';
+import AppDev from '../image/custom-appdev.png';
+import RFID from '../image/RFID.png';
 
 const SliderComponent = () => {
   const settings = {
@@ -26,7 +26,7 @@ const SliderComponent = () => {
   return (
     <Slider {...settings}>
       <div className="slide">
-        <img src={cardImage1} alt="ERP Microsoft Dynamics 365 F&O Implementation" className="card-image" />
+        <img src={ERP} alt="ERP Microsoft Dynamics 365 F&O Implementation" className="card-image" />
         <h2>ERP Microsoft Dynamics 365 F&O Implementation</h2>
         <p>With years of experience and a team of certified experts,
           Visual Tech Asia ensures a seamless implementation of
@@ -36,7 +36,7 @@ const SliderComponent = () => {
         <button>Learn More</button>
       </div>
       <div className="slide">
-        <img src={cardImage2} alt="Custom Application Development" className="card-image" />
+        <img src={AppDev} alt="Custom Application Development" className="card-image" />
         <h2>Custom Application Development</h2>
         <p>At Visual Tech Asia, we craft bespoke mobile and web
           applications designed to meet your unique business
@@ -46,7 +46,7 @@ const SliderComponent = () => {
         <button>Learn More</button>
       </div>
       <div className="slide">
-        <img src={cardImage3} alt="RFID Solutions" className="card-image" />
+        <img src={RFID} alt="RFID Solutions" className="card-image" />
         <h2>RFID Solutions</h2>
         <p>Visual Tech Asia offers cutting-edge RFID solutions that
           enhance efficiency and accuracy in tracking and

@@ -5,8 +5,7 @@ html, body {
 }
 
 .app-container {
-  min-height: 350vh;
-  
+  min-height: 350vh; 
   background-image: url('../src/image/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
