@@ -1,4 +1,4 @@
-.slide {
+/* .slide {
   background: rgba(255, 255, 255, 0.8); 
   padding: 2rem;
   border-radius: 15px;
@@ -11,7 +11,7 @@
 }
 
 .slide:hover {
-  transform: scale(1.05); /* Hover effect */
+  transform: scale(1.05); 
   transition: transform 0.3s ease;
 }
 
@@ -58,4 +58,4 @@
 .card-image {
   width: 80%;
   margin-bottom: 1rem;
-}
+} */
