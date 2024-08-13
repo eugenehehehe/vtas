@@ -239,6 +239,9 @@ const OurExpertise = () => {
             );
           })}
         </Slider>
+        <div className='box'>
+          <p> card, and navbar hover on progress </p>
+        </div>
       </div>
     </section>
   );

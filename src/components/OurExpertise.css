@@ -226,3 +226,15 @@
 .custom-arrow:hover {
   color: #007bff;
 }
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.box p{
+color: black;
+text-align: center;
+}
