@@ -6,6 +6,10 @@ import icon2 from '../image/16.png';
 import icon3 from '../image/17.png';
 import icon4 from '../image/18.png';
 import icon5 from '../image/19.png';
+import icon6 from '../image/20.png';
+import icon7 from '../image/22.png';
+import icon8 from '../image/21.png';
+
 
 
 const RFID = () => {
@@ -61,7 +65,34 @@ const RFID = () => {
           </div>
         </div>
       </div>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div className="why-rfid">
+        <h2>WHY RFID?</h2>
+        <h4>RFID (Radio Frequency Identification) technology revolutionizes asset tracking and management, offering numerous benefits:
+        </h4>
+        <div className="benefits">
+          <div className="benefit">
+            <img src={icon6} alt="Improved Security and Compliance" className="benefit-icon" />
+            <div>
+              <h3>Improved Security and Compliance</h3>
+              <p>Our RFID solutions enhance security measures and ensure compliance with industry standards.</p>
+            </div>
+          </div>
+          <div className="benefit">
+            <img src={icon7} alt="Enhanced Efficiency and Accuracy" className="benefit-icon" />
+            <div>
+              <h3>Enhanced Efficiency and Accuracy</h3>
+              <p>RFID technology streamlines processes and improves accuracy in tracking and managing assets.</p>
+            </div>
+          </div>
+          <div className="benefit">
+            <img src={icon8} alt="Cost Savings and Scalability" className="benefit-icon" />
+            <div>
+              <h3>Cost Savings and Scalability</h3>
+              <p>Our scalable solutions offer significant cost savings and adapt to the growing needs of your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

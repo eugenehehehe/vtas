@@ -125,3 +125,84 @@ body {
 .step:nth-child(even) .text {
   order: 2;
 }
+
+.why-rfid {
+    margin-top: 10rem;
+    text-align: center;
+    color: #E9E9E9;
+  }
+  
+  .why-rfid h2 {
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .why-rfid h4 {
+    font-size: 19.43px;
+    font-weight:500;
+    margin-bottom: 4rem;
+    line-height: 22.72px;
+  }
+  
+  .benefits {
+    display: flex;
+
+    flex-direction: column; 
+    align-items: center; }
+  
+  .benefit {
+    display: flex;
+    align-items: center;
+    max-height: 259px;
+    max-width: 1140px;
+    margin-bottom: 4rem;
+    background: rgba(202, 202, 202, 0.728);
+    padding: 2rem 2rem 2rem 4rem; 
+    border-radius: 55px;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between; 
+  
+  .benefit img {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .benefit:nth-child(1) img, 
+  .benefit:nth-child(3) img { 
+    left: -160px; 
+  }
+  
+  .benefit:nth-child(2) img { 
+    right: -160px; 
+  }
+  
+  .benefit:nth-child(1) h3, 
+  .benefit:nth-child(3) h3, 
+  .benefit:nth-child(1) p, 
+  .benefit:nth-child(3) p {
+    text-align: right;
+  }
+  
+  .benefit:nth-child(2) h3, 
+  .benefit:nth-child(2) p {
+    text-align: left;
+  }
+  
+  .benefit h3 {
+    font-size: 44.57px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #181818;
+  }
+  
+  .benefit p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #181818;
+    max-width: 540.7px;
+  }
+}
