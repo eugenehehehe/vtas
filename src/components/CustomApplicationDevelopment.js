@@ -68,7 +68,7 @@ const CustomApplicationDevelopment = () => {
             <h2>Deployment & Support</h2>
             <p>Our deployment process is smooth and efficient, minimizing any disruption to your operations. Post-deployment, we provide ongoing support and maintenance to keep your application running smoothly.</p>
           </div>
-          <img src={icon6} alt="Deployment & Support" className="icon right-icon"/>
+          <img src={icon6} alt="Deployment & Support" className="icon-6"/>
         </div>
         <div className="step">
           <img src={icon7} alt="Holistic Business Improvement" className="icon left-icon"/>

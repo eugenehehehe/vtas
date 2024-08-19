@@ -1,121 +1,126 @@
 html,
 body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .custom.bg {
-  min-height: 350vh;
-  background-image: url('../image/RFIDbg.png');
-  background-size: cover;
-  margin: 0;
-  padding-top: 240px;
+    min-height: 350vh;
+    background-image: url('../image/RFIDbg.png');
+    background-size: cover;
+    margin: 0;
+    padding-top: 240px;
 }
 
 .content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: left;
 }
 
 .section {
-  margin-top: 6rem;
-  text-align: left;
-  padding-left: 15rem;
-  margin-bottom: 4rem;
-  color: #E9E9E9;
+    margin-top: 6rem;
+    text-align: left;
+    padding-left: 15rem;
+    margin-bottom: 4rem;
+    color: #E9E9E9;
 }
 
 .section p {
-  font-size: 18px;
-  line-height: 21.04px;
-  max-width: 850px;
-  margin-top: 2rem;
-  text-align: justify;
-  font-weight: 400;
-  letter-spacing: 1.4px;
+    font-size: 18px;
+    line-height: 21.04px;
+    max-width: 850px;
+    margin-top: 2rem;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 1.4px;
 }
 
 .heading {
-  letter-spacing: 2px;
-  font-weight: 800;
-  font-size: 85px;
-  line-height: 93.59px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 85px;
+    line-height: 93.59px;
 }
 
 .subheading {
-  margin: 0;
-  letter-spacing: 2px;
-  font-weight: 800;
-  font-size: 85px;
-  line-height: 93.59px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 85px;
+    line-height: 93.59px;
 }
 
 .steps {
-  display: flex;
-  margin-top: 25rem;
-  flex-direction: column;
-  gap: 8rem;
+    display: flex;
+    margin-top: 25rem;
+    flex-direction: column;
+    gap: 8rem;
 }
 
 .step {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .step .text1 {
-  max-width: 600px;
-  text-align: left;
-  max-width: 785px;
+    max-width: 600px;
+    text-align: left;
+    max-width: 785px;
 }
 
 .step .text2 {
-  max-width: 600px;
-  text-align: right;
-  max-width: 785px;
+    max-width: 600px;
+    text-align: right;
+    max-width: 785px;
+}
+
+.step .text2 p {
+    text-align: right;
+    margin-left: auto;
 }
 
 .step h2 {
-  font-size: 54.32px;
-  margin-bottom: 1rem;
-  color: #E9E9E9;
-  font-weight: 800;
-  max-width: 785px;
+    font-size: 54.32px;
+    margin-bottom: 1rem;
+    color: #E9E9E9;
+    font-weight: 800;
+    max-width: 785px;
 }
 
 .step p {
-  font-size: 17.43px;
-  line-height: 1.5;
-  max-width: 600px;
-  color: #E9E9E9;
-  font-weight: 500;
+    font-size: 17.43px;
+    line-height: 1.5;
+    max-width: 600px;
+    color: #E9E9E9;
+    font-weight: 500;
 }
 
 .step img.icon {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  border-radius: 50px;
-  background: radial-gradient(circle, #19174b 0%, #08062200 70%);
-  
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 50px;
+    background: radial-gradient(circle, #19174b 0%, #08062200 70%);
+
 }
 
 
 .left-icon {
-  order: 0;
+    order: 0;
 }
 
 .right-icon {
-  order: 3;
+    order: 3;
 }
 
 .step:nth-child(even) .left-icon {
-  order: 3;
+    order: 3;
 }
 
 /* .step:nth-child(even) .right-icon {
@@ -123,86 +128,112 @@ body {
 } */
 
 .step:nth-child(even) .text {
-  order: 2;
+    order: 2;
 }
 
 .why-rfid {
-    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-top: 10rem;
     color: #E9E9E9;
-  }
-  
-  .why-rfid h2 {
-    font-size: 65px;
+}
+
+.why-rfid h2 {
+    font-size: 111.47px;
     font-weight: 800;
     margin-bottom: 1rem;
-  }
-  
-  .why-rfid h4 {
+}
+
+.why-rfid h4 {
     font-size: 19.43px;
-    font-weight:500;
-    margin-bottom: 4rem;
+    font-weight: 500;
+    max-width: 734.58px;
+    margin-top: 0;
+    margin-bottom: 12rem;
     line-height: 22.72px;
-  }
-  
-  .benefits {
+}
+
+.benefits {
     display: flex;
 
-    flex-direction: column; 
-    align-items: center; }
-  
-  .benefit {
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit {
     display: flex;
     align-items: center;
-    max-height: 259px;
-    max-width: 1140px;
-    margin-bottom: 4rem;
+    height: 210px;
+    width: 1140px;
+    margin-bottom: 15rem;
     background: rgba(202, 202, 202, 0.728);
-    padding: 2rem 2rem 2rem 4rem; 
+    padding: 2rem 2rem 2rem 4rem;
     border-radius: 55px;
     position: relative;
     flex-direction: row;
-    justify-content: space-between; 
-  
-  .benefit img {
+    justify-content: space-between;
+}
+
+.benefit img {
     width: 300px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .benefit:nth-child(1) img, 
-  .benefit:nth-child(3) img { 
-    left: -160px; 
-  }
-  
-  .benefit:nth-child(2) img { 
-    right: -160px; 
-  }
-  
-  .benefit:nth-child(1) h3, 
-  .benefit:nth-child(3) h3, 
-  .benefit:nth-child(1) p, 
-  .benefit:nth-child(3) p {
+}
+
+
+.benefit:nth-child(3) img {
+    width: 450px;
+    height: 462px;
+    left: -140px;
+}
+
+.benefit:nth-child(1) img {
+    width: 456px;
+    height: 646px;
+    left: -170px;
+}
+
+.benefit:nth-child(2) img {
+    width: 415px;
+    height: 467px;
+    left: auto;
+    right: -170px;
+}
+
+
+.benefit:nth-child(1) p,
+.benefit:nth-child(3) p {
     text-align: right;
-  }
-  
-  .benefit:nth-child(2) h3, 
-  .benefit:nth-child(2) p {
+    margin-left: 620px;
+}
+
+.benefit:nth-child(1) h3 {
+    margin-left: 400px;
+}
+.benefit:nth-child(3) h3 {
+    margin-left: 550px;
+}
+
+.benefit:nth-child(2) h3,
+.benefit:nth-child(2) p {
     text-align: left;
-  }
-  
-  .benefit h3 {
+    padding-left: 2px;
+}
+
+.benefit h3 {
     font-size: 44.57px;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #181818;
-  }
-  
-  .benefit p {
-    font-size: 18px;
+    color: #242335;
+
+}
+
+.benefit p {
+    font-size: 14.3px;
     font-weight: 500;
     color: #181818;
     max-width: 540.7px;
-  }
 }

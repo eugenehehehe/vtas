@@ -125,3 +125,12 @@ body {
 .step:nth-child(even) .text {
   order: 2;
 }
+
+.icon-6 {
+  height: 240px; 
+  width: 330px;   
+  position: relative;
+  padding-left: 2rem;
+  border-radius: 50px;
+  background: radial-gradient(circle, #19174b 0%, #08062200 50%);
+}
