@@ -14,6 +14,12 @@ const Navbar = () => {
     const handleLanguageChange = (language) => {
         setActiveLanguage(language);
     };
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <nav className="nav">
@@ -26,7 +32,9 @@ const Navbar = () => {
                         Our Expertise <FaChevronDown className="dropdown-icon" />
                     </a>
                     <div className="dropdown">
-                        <a href="#erp" className="dropdown-item">ERP Microsoft Dynamics 365 F&O Implementation</a>
+                        <Link to="/erp" className="dropdown-item">
+                        ERP Microsoft Dynamics 365 F&O Implementation
+                        </Link>
                         <Link to="/custom-application-development" className="dropdown-item">
                             Custom Application Development
                         </Link>
@@ -36,7 +44,9 @@ const Navbar = () => {
                     </div>
                 </div>
                 <a href="#services" className="nav-item">Our Services</a>
-                <a href="#contact" className="nav-item">Contact Us</a>
+                <Link to="/" onClick={handleScrollToContact} className='nav-item'>
+                Contact Us
+            </Link>
             </div>
             <div className="language-buttons">
                 <img

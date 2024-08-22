@@ -11,16 +11,16 @@ import icon7 from '../image/holistic 2.png';
 
 const CustomApplicationDevelopment = () => {
   useEffect(() => {
-    const bgSection = document.querySelector('.custom.bg');
+    const bgSection = document.querySelector('.background2');
     const img = new Image();
-    img.src = '/image/customappdev2.png'; 
+    img.src = '/image/appdevbg.png'; 
     img.onload = () => {
       bgSection.style.backgroundImage = `url(${img.src})`;
     };
   }, []);
 
   return (
-    <section className="custom bg">
+    <section className="background2">
       <Navbar />
       <div className="section">
         <div className="heading">Custom Application</div>

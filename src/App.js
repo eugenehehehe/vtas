@@ -1,10 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import MainContent from './components/MainContent';
-import { GlobalStyle } from './styles/GlobalStyles';
-import './App.css';
 
+import MainContent from './components/MainContent';
+
+import './App.css';
+import { GlobalStyle } from './styles/GlobalStyles';
 import OurExpertise from './components/OurExpertise';
+
+import ContactUs from './components/ContactUs';
 
 
 
@@ -14,12 +16,12 @@ const App = () => {
     <div className="app-container">
       <GlobalStyle />
       <div className="background-wrapper"></div>
-      <Navbar />
+      {/* <Navbar /> */}
       <MainContent />
-      
       <OurExpertise />
+      <ContactUs />
     </div>
-    
+
   );
 }
 

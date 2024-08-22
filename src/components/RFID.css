@@ -4,13 +4,30 @@ body {
     margin: 0;
     padding: 0;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-.custom.bg {
+  html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: transparent;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    margin: 0;
+  }
+.background {
     min-height: 350vh;
     background-image: url('../image/RFIDbg.png');
     background-size: cover;
     margin: 0;
-    padding-top: 240px;
+    padding-top: 180px;
 }
 
 .content {
@@ -55,9 +72,9 @@ body {
 
 .steps {
     display: flex;
-    margin-top: 25rem;
     flex-direction: column;
-    gap: 8rem;
+    gap: 10rem; /* Adjust this value as needed */
+    position: relative;
 }
 
 .step {
@@ -67,6 +84,17 @@ body {
     text-align: center;
     position: relative;
 }
+
+.vector {
+    position: absolute;
+    top: 50%; /* Adjust this value to fine-tune the position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 200px; /* Adjust the size as necessary */
+    height: auto;
+}
+
 
 .step .text1 {
     max-width: 600px;
@@ -113,10 +141,12 @@ body {
 
 .left-icon {
     order: 0;
+    z-index: 2; /*if needed*/
 }
 
 .right-icon {
     order: 3;
+    z-index: 2; /*if needed*/
 }
 
 .step:nth-child(even) .left-icon {

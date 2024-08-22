@@ -1,0 +1,51 @@
+.contact-us {
+    text-align: center;
+    padding: 50px;
+    margin-top: 27rem;
+    background-color: #0b0b4500;
+    color: white;
+}
+.contact-us .h1{
+    font-size: 61.17px;
+    font-weight: 800;
+}
+.contact-us .highlight {
+    color: #f7b500;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-details {
+    text-align: left;
+    max-width: 400px;
+}
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code img {
+    max-width: 200px;
+}
+
+.qr-code p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.map {
+    margin-top: 30px;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+}

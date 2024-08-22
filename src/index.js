@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import ERP from './components/ERP';
 import CustomApplicationDevelopment from './components/CustomApplicationDevelopment';
 import RFID from './components/RFID';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,6 +17,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/custom-application-development" element={<CustomApplicationDevelopment />} />
       <Route path="/rfid-solutions" element={<RFID />} />
+      <Route path="/erp" element={<ERP />} />
     </Routes>
   </BrowserRouter>
 );

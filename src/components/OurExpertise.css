@@ -1,123 +1,26 @@
-/* .our-expertise-section {
-  padding: 4rem 0;
-  background-size: cover;
-  color: #fff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.section-title {
-  text-align: center;
-  letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #E9E9E9;
-}
-
-.slick-slide {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.slick-list {
-  margin: 0 -10px;
-}
-
-.expertise-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-  color: #fff;
-  transition: transform 0.3s ease, opacity 0.3s ease, z-index 0.3s ease;
-  position: relative;
-  flex: 0 0 auto;
-  opacity: 0.6;
-  z-index: 1;
-}
-
-.expertise-card.active {
-  transform: scale(1.2) rotate(0deg);
-  z-index: 3;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-
-.expertise-card.left {
-  transform: rotate(15deg) scale(0.9) translateX(-50%);
-  z-index: 2;
-}
-
-.expertise-card.right {
-  transform: rotate(-15deg) scale(0.9) translateX(50%);
-  z-index: 2;
-}
-
-.expertise-image {
-  margin-bottom: 1rem;
-}
-
-.expertise-image img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.expertise-content h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.expertise-content p {
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.learn-more {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.learn-more:hover {
-  background-color: #0056b3;
-}
-
-.custom-arrow {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.custom-arrow:hover {
-  color: #007bff;
-} */
-
 .our-expertise-section {
   padding: 4rem 0;
   background-size: cover;
   color: #fff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: transparent;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

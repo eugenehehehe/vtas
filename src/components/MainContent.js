@@ -1,9 +1,12 @@
 import React from 'react';
 import './MainContent.css';
+import Navbar from './Navbar';
 <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
 
 const MainContent = () => {
   return (
+    <div className="main-content-container">
+      <Navbar />
     <section className="main-section">
       <div className="content-wrapper">
         <div className="line"></div>
@@ -20,7 +23,8 @@ const MainContent = () => {
         </div>
       </div>
     </section>
-  );
+    </div>
+    );
 }
 
 export default MainContent;

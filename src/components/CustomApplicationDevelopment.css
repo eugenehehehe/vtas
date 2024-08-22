@@ -4,13 +4,30 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.custom.bg {
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: transparent;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+.background2 {
   min-height: 350vh;
-  background-image: url('../image/customappdev2.png');
+  background-image: url('../image/appdevbg.png');
   background-size: cover;
   margin: 0;
-  padding-top: 240px;
+  padding-top: 180px;
 }
 
 .content {
@@ -55,7 +72,7 @@ body {
 
 .steps {
   display: flex;
-  margin-top: 24rem;
+  margin-top: 20rem;
   flex-direction: column;
   gap: 8rem;
 }
