@@ -5,8 +5,10 @@ import flag from '../image/usflag.png';
 import flag2 from '../image/idnflag.png';
 import { FaChevronDown } from 'react-icons/fa';
 import './Navbar.css';
-import './CustomApplicationDevelopment';
-import './RFID';
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
+// import './CustomApplicationDevelopment';
+// import './RFID';
+// import './ERP';
 
 const Navbar = () => {
     const [activeLanguage, setActiveLanguage] = useState('EN');
@@ -24,7 +26,9 @@ const Navbar = () => {
     return (
         <nav className="nav">
             <Link to="/">
-                <img src={logo} alt="Visual Tech Logo" className="logo" />
+            <div className="logo-container">
+                    <img src={logo} alt="Visual Tech Logo" className="logo" />
+                </div>
             </Link>
             <div className="menu">
                 <div className="menu-item">
@@ -33,7 +37,7 @@ const Navbar = () => {
                     </a>
                     <div className="dropdown">
                         <Link to="/erp" className="dropdown-item">
-                        ERP Microsoft Dynamics 365 F&O Implementation
+                            ERP Microsoft Dynamics 365 F&O Implementation
                         </Link>
                         <Link to="/custom-application-development" className="dropdown-item">
                             Custom Application Development
@@ -45,8 +49,8 @@ const Navbar = () => {
                 </div>
                 <a href="#services" className="nav-item">Our Services</a>
                 <Link to="/" onClick={handleScrollToContact} className='nav-item'>
-                Contact Us
-            </Link>
+                    Contact Us
+                </Link>
             </div>
             <div className="language-buttons">
                 <img
@@ -56,15 +60,13 @@ const Navbar = () => {
                 />
                 <button
                     className={`language-button ${activeLanguage === 'ID' ? 'active' : ''}`}
-                    onClick={() => handleLanguageChange('EN')}
-                >
+                    onClick={() => handleLanguageChange('EN')}>
                     EN
                 </button>
                 <span>|</span>
                 <button
                     className={`language-button ${activeLanguage === 'EN' ? 'active' : ''}`}
-                    onClick={() => handleLanguageChange('ID')}
-                >
+                    onClick={() => handleLanguageChange('ID')}>
                     ID
                 </button>
                 <img

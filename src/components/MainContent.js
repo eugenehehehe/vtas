@@ -12,8 +12,8 @@ const MainContent = () => {
         <div className="line"></div>
         <div className="content-text">
           <div className="title-wrapper">
-            <h1 className="heading">Welcome to</h1>
-            <h1 className="subheading">Visual Tech Asia</h1>
+            <div className="heading">Welcome to</div>
+            <div className="subheading">Visual Tech Asia</div>
           </div>
           <p className="text">
             At Visual Tech Asia, we transform businesses with cutting-edge technology and expert consultation services. 

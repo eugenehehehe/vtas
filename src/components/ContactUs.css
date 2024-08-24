@@ -5,9 +5,31 @@
     background-color: #0b0b4500;
     color: white;
 }
-.contact-us .h1{
-    font-size: 61.17px;
+
+.contact-us h2 {
+    font-size: 22.69px;
+    font-weight: 700;
+}
+
+.contact-us h1 {
+    font-size: 55px;
     font-weight: 800;
+    color: white; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                 0 0 4px rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;   
+}
+
+.contact-us p {
+    max-width: 876px;
+    align-items: center;
+    word-break: normal;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 auto; /* Center align the paragraph */
+    margin-top: 20px; /* Add some space above the p */
 }
 .contact-us .highlight {
     color: #f7b500;
