@@ -102,28 +102,28 @@ const ERP = () => {
             <div className="why-f">
                 <h2>Why Dynamics 365 F&O ?</h2>
                 <div className="benefits">
-                    <div className="benefit">
+                    <div className="benefiterp">
                         <img src={icon6} alt="Enhanced Financial Management" className="benefit-icon" />
                         <div>
                             <h3>Enhanced Financial Management</h3>
                             <p>Leverage AI-driven insights for accurate financial forecasting, improved cash flow management, and streamlined accounting processes​.</p>
                         </div>
                     </div>
-                    <div className="benefit">
+                    <div className="benefiterp">
                         <img src={icon7} alt="Optimized Supply Chain Operations" className="benefit-icon" />
                         <div>
                             <h3>Optimized Supply Chain Operations</h3>
                             <p>Manage your inventory, warehouse, and procurement processes more effectively, ensuring timely delivery and quality control​.</p>
                         </div>
                     </div>
-                    <div className="benefit">
+                    <div className="benefiterp">
                         <img src={icon8} alt="Robust Data Security" className="benefit-icon" />
                         <div>
                             <h3>Robust Data Security</h3>
                             <p>Benefit from top-tier security features, ensuring your data is protected against breaches and compliant with industry standards​​.</p>
                         </div>
                     </div>
-                    <div className="benefit">
+                    <div className="benefiterp">
                         <img src={icon9} alt="Seamless Integrations" className="benefit-icon" />
                         <div>
                             <h3>Seamless Integrations</h3>

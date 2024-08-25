@@ -40,7 +40,7 @@ const RFID = () => {
                         <p>We begin with a detailed consultation to understand your tracking and management needs. This includes identifying the best RFID technology and solutions that align with your business goals.</p>
                     </div>
                 </div>
-                <img src={vector1} alt="vector1" className="vector" />
+                {/* <img src={vector1} alt="vector1" className="vector" /> */}
 
                 <div className="step">
                     <div className="text2">
@@ -49,7 +49,7 @@ const RFID = () => {
                     </div>
                     <img src={icon2} alt="System Design & Integration" className="icon right-icon" style={{ width: '402px', height: '292px' }} />
                 </div>
-                <img src={vector2} alt="vector2" className="vector" />
+                {/* <img src={vector2} alt="vector2" className="vector" /> */}
 
                 <div className="step">
                     <img src={icon3} alt="Tagging & Implementation" className="icon left-icon" style={{ width: '385px', height: '325pxpx' }} />
@@ -58,7 +58,7 @@ const RFID = () => {
                         <p>We provide and implement RFID tags for your assets, ensuring optimal placement and configuration for accurate tracking. Our implementation process is efficient, minimizing downtime and disruption.</p>
                     </div>
                 </div>
-                <img src={vector3} alt="vector3" className="vector" />
+                {/* <img src={vector3} alt="vector3" className="vector" /> */}
 
                 <div className="step">
                     <div className="text2">
@@ -67,7 +67,7 @@ const RFID = () => {
                     </div>
                     <img src={icon4} alt="Data Collection & Management" className="icon right-icon" style={{ width: '413px', height: '370px' }} />
                 </div>
-                <img src={vector4} alt="vector4" className="vector" />
+                {/* <img src={vector4} alt="vector4" className="vector" /> */}
 
                 <div className="step">
                     <img src={icon5} alt="Training & Support" className="icon left-icon" style={{ width: '341pxpx', height: '361px' }} />
@@ -76,7 +76,7 @@ const RFID = () => {
                         <p>We offer comprehensive training for your staff to ensure they are proficient in using the RFID system. Additionally, our ongoing support services ensure that your system remains reliable and efficient.</p>
                     </div>
                 </div>
-                <img src={vector5} alt="vector5" className="vector" />
+                {/* <img src={vector5} alt="vector5" className="vector" /> */}
             </div>
 
             <div className="why-rfid">

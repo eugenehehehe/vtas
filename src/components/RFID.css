@@ -118,7 +118,7 @@ body {
     margin-bottom: 1rem;
     color: #E9E9E9;
     font-weight: 800;
-    max-width: 785px;
+    min-width: 900px;
 }
 
 .step p {
