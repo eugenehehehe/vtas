@@ -76,7 +76,7 @@ body {
 .steps {
     display: flex;
     flex-direction: column;
-    gap: 10rem; /* Adjust this value as needed */
+    gap: 10rem; 
     position: relative;
  
 }

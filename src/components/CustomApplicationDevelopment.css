@@ -12,7 +12,7 @@ body {
 
 html, body {
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Karla', sans-serif;
   background-color: transparent;
   color: #333;
   display: flex;
@@ -50,70 +50,85 @@ body {
   line-height: 21.04px;
   max-width: 850px;
   margin-top: 2rem;
+  font-family: "Karla", sans-serif;
   text-align: justify;
   font-weight: 400;
   letter-spacing: 1.4px;
 }
 
-.heading {
+.headingc {
   letter-spacing: 2px;
-  font-weight: 800;
   font-size: 85px;
+  font-weight: 800;
+  font-family: "karla", sans-serif;
   line-height: 93.59px;
+  color: #E9E9E9;
+  -webkit-text-stroke: 1.2px #E9E9E9;
 }
 
-.subheading {
+.subheadingc {
   margin: 0;
   letter-spacing: 2px;
   font-weight: 800;
   font-size: 85px;
   line-height: 93.59px;
+  font-family: "karla", sans-serif; 
+  color: #E9E9E9;
+  -webkit-text-stroke: 1.2px #E9E9E9;
 }
 
-.steps {
+.steps.c {
   display: flex;
   margin-top: 20rem;
   flex-direction: column;
   gap: 8rem;
+  font-family: "Karla", sans-serif;
 }
 
-.step {
+.stepc {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+  font-family: "Karla", sans-serif;
 }
 
-.step .text1 {
+.stepc .text1 {
   max-width: 600px;
   text-align: left;
   max-width: 785px;
+  font-family: "Karla", sans-serif;
 }
 
-.step .text2 {
+.stepc .text2 {
   max-width: 600px;
   text-align: right;
   max-width: 785px;
+  font-family: "Karla", sans-serif;
 }
 
-.step h2 {
+.stepc h2 {
   font-size: 54.32px;
   margin-bottom: 1rem;
   color: #E9E9E9;
-  font-weight: 800;
+  -webkit-text-stroke: 1.2px #E9E9E9;
+  font-family: "Karla", sans-serif;
+  font-weight: 900;
   max-width: 785px;
 }
 
-.step p {
+.stepc p {
   font-size: 17.43px;
   line-height: 1.5;
   max-width: 600px;
+  line-height: 20.38px;
+  font-family: "Karla", sans-serif;
   color: #E9E9E9;
   font-weight: 500;
 }
 
-.step img.icon {
+.stepc img.icon {
   width: 400px;
   height: 400px;
   position: relative;
@@ -131,7 +146,7 @@ body {
   order: 3;
 }
 
-.step:nth-child(even) .left-icon {
+.stepc:nth-child(even) .left-icon {
   order: 3;
 }
 
@@ -139,7 +154,7 @@ body {
   order: 1;
 } */
 
-.step:nth-child(even) .text {
+.stepc:nth-child(even) .text {
   order: 2;
 }
 

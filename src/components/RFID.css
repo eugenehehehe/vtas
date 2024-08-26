@@ -12,7 +12,7 @@ body {
 
   html, body {
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Karla', sans-serif;
     background-color: transparent;
     color: #333;
     display: flex;
@@ -41,7 +41,7 @@ body {
     margin-top: 6rem;
     text-align: left;
     padding-left: 15rem;
-    margin-bottom: 4rem;
+    margin-bottom: 24rem;
     color: #E9E9E9;
 }
 
@@ -57,9 +57,10 @@ body {
 
 .heading {
     letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 85px;
     line-height: 93.59px;
+    -webkit-text-stroke: 4px #E9E9E9;
 }
 
 .subheading {
@@ -73,7 +74,7 @@ body {
 .steps {
     display: flex;
     flex-direction: column;
-    gap: 10rem; /* Adjust this value as needed */
+    gap: 2.9rem; /* Adjust this value as needed */
     position: relative;
 }
 
@@ -116,7 +117,9 @@ body {
 .step h2 {
     font-size: 54.32px;
     margin-bottom: 1rem;
+    letter-spacing: 2px;
     color: #E9E9E9;
+    -webkit-text-stroke: 2px #E9E9E9;
     font-weight: 800;
     min-width: 900px;
 }
@@ -198,12 +201,14 @@ body {
     height: 210px;
     width: 1140px;
     margin-bottom: 15rem;
-    background: rgba(202, 202, 202, 0.728);
+    background: rgba(202, 202, 202, 0.058);
     padding: 2rem 2rem 2rem 4rem;
     border-radius: 55px;
     position: relative;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.728), rgba(202, 202, 202, 0.728));
+    background-blend-mode: overlay;
 }
 
 .benefit img {
@@ -237,20 +242,23 @@ body {
 .benefit:nth-child(1) p,
 .benefit:nth-child(3) p {
     text-align: right;
-    margin-left: 620px;
+    margin-left: 520px;
 }
 
 .benefit:nth-child(1) h3 {
-    margin-left: 400px;
+    margin-left: 300px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px #242335;
 }
 .benefit:nth-child(3) h3 {
-    margin-left: 550px;
+    margin-left: 400px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px #242335;
 }
 
 .benefit:nth-child(2) h3,
 .benefit:nth-child(2) p {
     text-align: left;
-    padding-left: 2px;
 }
 
 .benefit h3 {
@@ -258,6 +266,8 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     color: #242335;
+    text-shadow: 
+    0 0 10px rgba(36, 35, 53, 0.25);
 
 }
 
