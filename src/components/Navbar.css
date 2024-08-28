@@ -1,4 +1,4 @@
-/* Base styles for the nav */
+ 
 html, body {
   overflow-x: hidden;
 }
@@ -21,6 +21,11 @@ html, body {
   z-index: 1000;
   margin-top: 2rem;
   background-size: cover;
+  background-image:
+  url('../image/noise.png'),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)); /* Linear gradient di atas noise */
+  background-blend-mode: overlay;
+background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -65,8 +70,10 @@ html, body {
 
 .nav-item {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #000000;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -106,9 +113,15 @@ html, body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   
-  min-width: 600px; /* Increased width as per your previous request */
+  min-width: 600px;  
   width: auto;
-  z-index: 1000; /* Ensures dropdown is above other content */
+  z-index: 1000;  
+}
+
+.dropdown-icon{
+  margin-left: 2px;
+  margin-top: 1px;
+  font-size: 0.75rem;
 }
 
 .dropdown-item {
@@ -121,7 +134,7 @@ html, body {
 
 .dropdown-item:hover {
   color: #101010;
-  padding-left: 2px;
+  padding-left: 2px ;
   border-radius: 10px;
   background-color: #fbfbfb;
   color: #2b2b2b;
@@ -133,13 +146,12 @@ html, body {
   display: block;
 }
 
-/* Ensure "Our Expertise" link does not get the same hover effects as others */
 .nav-item:hover {
   color: #000;
 }
 
 .menu-item:hover .nav-item {
-  color: #333; /* Revert color back to original when hovering */
+  color: #333;  
 }
 
 

@@ -12,6 +12,12 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+/* .karla-uniquifier {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style:oblique;
+} */
 
 body {
   margin: 0;
@@ -72,28 +78,36 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.heading {
+.headingm {
   margin: 0;
   letter-spacing: 2px;
-  font-weight: 800;
   font-size: 85px;
   line-height: 93.59px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style:normal;
 }
 
-.subheading {
+.subheadingm {
   margin: 0;
   letter-spacing: 2px;
-  font-weight: 800;
   font-size: 85px;
   line-height: 93.59px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style:normal;
 }
 
-.text {
+.textm {
   font-size: 18px;
   font-weight: 400;
-  max-width: 800px;
-  line-height: 1.4;
+  max-width: 900px;
+  min-height: 84px;
+  line-height: 21.04px;
   word-spacing: 5px;
   text-align: justify;
+  font-family: "Karla", sans-serif;
   letter-spacing: 1px;
 }

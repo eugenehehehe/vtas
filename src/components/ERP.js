@@ -33,7 +33,7 @@ const ERP = () => {
         <section className="custom bg">
             <Navbar />
             <div className="section">
-                <div className="heading">ERP Microsoft Dynamics 365 F&O Implementation</div>
+                <div className="headinge">ERP Microsoft Dynamics 365 F&O Implementation</div>
                 <p>With years of experience and a team of certified experts, Visual Tech Asia ensures a seamless implementation of Dynamics 365 F&O. Our proven methodology, tailored to your specific requirements, minimizes risks and ensures a smooth transition.
                 </p>
                 
@@ -49,8 +49,8 @@ const ERP = () => {
                     </div>
                 </div>
                 </div>
-                <div className="steps">
-                    <div className='step'>
+                <div className="stepse">
+                    <div className='stepe'>
                         <img src={icon1} alt="Comprehensive Planning and Scoping" className="icon left-icon" style={{ width: '460px', height: '314px' }} />
                         <div className="text1">
                             <h2>Comprehensive Planning and Scoping</h2>
@@ -60,7 +60,7 @@ const ERP = () => {
                 </div>
                 {/* <img src={vector1} alt="vector1" className="vector" /> */}
 
-                <div className="step">
+                <div className="stepe">
                     <div className="text2">
                         <h2>Lifecycle Services (LCS)
                             Configuration</h2>
@@ -70,7 +70,7 @@ const ERP = () => {
                 </div>
                 {/* <img src={vector2} alt="vector2" className="vector" /> */}
 
-                <div className="step">
+                <div className="stepe">
                     <img src={icon3} alt="Tailored Solution Design and Development" className="icon left-icon" style={{ width: '385px', height: '325pxpx' }} />
                     <div className="text1">
                         <h2>Tailored Solution
@@ -80,7 +80,7 @@ const ERP = () => {
                 </div>
                 {/* <img src={vector3} alt="vector3" className="vector" /> */}
 
-                <div className="step">
+                <div className="stepe">
                     <div className="text2">
                         <h2>Rigorous Testing & Validation</h2>
                         <p style={{width: "659px", height: "60.15px"}}>To ensure the highest quality, we conduct extensive testing, including unit tests, integration tests, and user acceptance tests. This thorough process guarantees that the solution works seamlessly in your environment before it goes live​​.</p>
@@ -89,7 +89,7 @@ const ERP = () => {
                 </div>
                 {/* <img src={vector4} alt="vector4" className="vector" /> */}
 
-                <div className="step">
+                <div className="stepe">
                     <img src={icon5} alt="Seamless Deployment and Ongoing Support" className="icon left-icon" style={{ width: '341pxpx', height: '361px' }} />
                     <div className="text1">
                         <h2>Seamless Deployment and Ongoing Support</h2>

@@ -56,8 +56,8 @@ body {
     max-height: 105px;
 }
 
-.heading {
-    letter-spacing: 2px;
+.headinge {
+    letter-spacing: 1px;
     font-weight: 800;
     font-size: 70px;
     line-height: 93.59px;
@@ -73,7 +73,7 @@ body {
     line-height: 93.59px;
 }
 
-.steps {
+.stepse {
     display: flex;
     flex-direction: column;
     gap: 10rem; 
@@ -81,7 +81,7 @@ body {
  
 }
 
-.step {
+.stepe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,26 +101,26 @@ body {
 } */
 
 
-.step .text1 {
+.stepe .text1 {
     max-width: 600px;
     text-align: left;
     max-width: 785px;
     margin-bottom: 4rem;
 }
 
-.step .text2 {
+.stepe .text2 {
     max-width: 600px;
     text-align: right;
     max-width: 785px;
     margin-bottom: 4rem;
 }
 
-.step .text2 p {
+.stepe .text2 p {
     text-align: right;
     margin-left: auto;
 }
 
-.step h2 {
+.stepe h2 {
     font-size: 54.32px;
     margin-bottom: 2.5rem;
     color: #E9E9E9;
@@ -130,7 +130,7 @@ body {
 
 }
 
-.step p {
+.stepe p {
     font-size: 17.43px;
     line-height: 20.38px;
     max-width: 684px;
@@ -138,7 +138,7 @@ body {
     font-weight: 500;
 }
 
-.step img.icon {
+.stepe img.icon {
     width: 400px;
     height: 400px;
     position: relative;
@@ -164,7 +164,7 @@ body {
     z-index: 2; /*if needed*/
 }
 
-.step:nth-child(even) .left-icon {
+.stepe:nth-child(even) .left-icon {
     order: 3;
 }
 
@@ -172,7 +172,7 @@ body {
   order: 1;
 } */
 
-.step:nth-child(even) .text {
+.stepe:nth-child(even) .text {
     order: 2;
 }
 
@@ -209,6 +209,8 @@ body {
     border-radius: 55px;
     position: relative;
     flex-direction: row;
+    background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.297), rgba(202, 202, 202, 0.27));
+    background-blend-mode: overlay;
     /* justify-content: space-between; */
 }
 

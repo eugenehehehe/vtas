@@ -74,7 +74,7 @@ body {
 .steps {
     display: flex;
     flex-direction: column;
-    gap: 2.9rem; /* Adjust this value as needed */
+    gap: 2.9rem;  
     position: relative;
 }
 
@@ -88,11 +88,11 @@ body {
 
 .vector {
     position: absolute;
-    top: 50%; /* Adjust this value to fine-tune the position */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 200px; /* Adjust the size as necessary */
+    width: 200px; 
     height: auto;
 }
 
@@ -207,7 +207,7 @@ body {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.728), rgba(202, 202, 202, 0.728));
+    background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.297), rgba(202, 202, 202, 0.27));
     background-blend-mode: overlay;
 }
 

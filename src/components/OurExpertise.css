@@ -131,8 +131,8 @@ body {
 }
 
 .box{
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   background-color: #fff;
   align-items: center;
 }
@@ -140,4 +140,5 @@ body {
 .box p{
 color: black;
 text-align: center;
+
 }

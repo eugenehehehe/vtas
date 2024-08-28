@@ -17,15 +17,19 @@ const Navbar = () => {
         setActiveLanguage(language);
     };
     const handleScrollToContact = () => {
-        const contactSection = document.getElementById('contact');
+        const contactSection = document.getElementById('contact-anchor');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    const handleScrollToTop = () => {
+        document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
+        document.body.scrollTop = 0;  // For Safari
+    };
 
     return (
         <nav className="nav">
-            <Link to="/">
+            <Link to="/" onClick={handleScrollToTop}>
             <div className="logo-container">
                     <img src={logo} alt="Visual Tech Logo" className="logo" />
                 </div>
