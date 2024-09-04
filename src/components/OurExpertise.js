@@ -112,9 +112,6 @@ const OurExpertise = () => {
             );
           })}
         </Slider>
-        <div className='box'>
-          <p> card, maps api on progress deploy malam ini </p>
-        </div>
       </div>
     </section>
   );

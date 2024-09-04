@@ -2,6 +2,7 @@
   padding: 4rem 0;
   background-size: cover;
   color: #fff;
+  font-family: "Karla", sans-serif;
 }
 * {
   margin: 0;
@@ -30,14 +31,15 @@ body {
 .section-title {
   text-align: center;
   letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 800;
+  font-size: 70px;
+  margin-top: 11rem;
   margin-bottom: 3rem;
   color: #E9E9E9;
 }
 
 .slick-slide {
-  padding: 0 10px;
+  padding: 0 15px; /* Adjust padding if needed */
   box-sizing: border-box;
 }
 
@@ -46,31 +48,35 @@ body {
 }
 
 .expertise-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.418);
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 300px;
-  margin: 0 auto;
+  width: 100%; /* Use width instead of max-width for better alignment */
   text-align: center;
   padding: 2rem;
   backdrop-filter: blur(10px);
   color: #fff;
   transition: transform 0.3s ease;
   position: relative;
-  flex: 0 0 auto;
-  opacity: 0.6;
-  z-index: 1;
+  opacity: 0.8; /* Adjust opacity if needed */
 }
 
 .expertise-card.active {
-  transform: scale(1.2) rotate(0deg);
   z-index: 3;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
-.expertise-card.left {
+/* Optional: Ensure no card is rotated or scaled */
+.expertise-card.left,
+.expertise-card.right {
+  transform: none;
+  z-index: 2;
+}
+
+
+/* .expertise-card.left {
   transform: rotate(-15deg) scale(0.9) translateX(0%);
   z-index: 2;
 }
@@ -78,7 +84,7 @@ body {
 .expertise-card.right {
   transform: rotate(15deg) scale(0.9) translateX(0%);
   z-index: 2;
-}
+} */
 
 
 .expertise-image {
@@ -86,14 +92,15 @@ body {
 }
 
 .expertise-image img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
   transition: transform 0.3s ease;
+  justify-content: center;
 }
 
 .expertise-content h3 {
-  font-size: 1.5rem;
+  font-size: 20.79px;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -101,21 +108,23 @@ body {
 .expertise-content p {
   line-height: 1.6;
   margin-bottom: 2rem;
+  font-size: 10.81px;
 }
 
 .learn-more {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ececec8a;
+  color: #404040;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 14.14px;
   transition: background-color 0.3s ease;
 }
 
 .learn-more:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
 }
 
 .custom-arrow {

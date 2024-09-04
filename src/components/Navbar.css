@@ -8,19 +8,19 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.545); 
-  backdrop-filter: blur(15px) saturate(180%); 
+  background-color: rgba(255, 255, 255, 0.545);
+  backdrop-filter: blur(15px) saturate(180%);
   border-radius: 40px;
   width: calc(100% - 2rem);
   max-width: 1200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: fixed;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
   margin-top: 2rem;
-  overflow: hidden; 
+  overflow: visible; /* Pastikan ini agar dropdown tidak terpotong */
 }
 
 .nav::before {
@@ -30,13 +30,31 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../image/noise.png'); 
-  opacity: 0.15; 
+  background: url('../image/noise.png');
+  opacity: 0.15;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
-  pointer-events: none; 
+  pointer-events: none;
+  border-radius: inherit; /* Ini untuk memastikan radius tetap sesuai */
 }
+
+/* Tambahan: pastikan padding atau border pada elemen lain tidak mengganggu */
+.nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+
+
 
 
 
@@ -116,18 +134,49 @@ html, body {
 
 .dropdown {
   display: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 110%; /* Adjust positioning as needed */
+  left: 14%;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  
-  min-width: 600px;  
-  width: auto;
-  z-index: 1000;  
+  min-width: 400px; /* Adjust to increase width */
+  width: 500px; /* Adjust width as needed */
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../image/noise.png');
+  opacity: 0.15;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  pointer-events: none;
+  border-radius: inherit; /* Ini untuk memastikan radius tetap sesuai */
+}
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
 }
 
 .dropdown-icon{
@@ -142,6 +191,8 @@ html, body {
   margin-left: 2px;
   padding: 0.5rem 0;
   display: block;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .dropdown-item:hover {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactUs.css'; 
-import qrCode from '../image/qrCode.png';
+import qrCode from '../image/qrcoden.png';
 import locationIcon from '../image/mapIcon.png'; // Import the location icon
 import emailIcon from '../image/mailIcon.png'; // Import the email icon
 import whatsappIcon from '../image/waIcon.png';
@@ -42,9 +42,6 @@ const ContactUs = () => {
                 
             </div>
             </div>
-            {/* <div className="map">
-                <img src=" alt="Map" />
-            </div> maps api*/}
         </section>
     );
 };

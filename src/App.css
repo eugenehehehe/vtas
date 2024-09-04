@@ -6,12 +6,16 @@ html, body {
 
 .app-container {
   min-height: 540vh; 
-  background-image: url('../src/image/mainbg.png');
+  background-image: url('../src/image/bgM2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
+.app-container.loaded {
+  background-image: url('../src/image/bgM2.png'); /* Main background image */
+}
 
 .App {
   font-family: Arial, sans-serif;

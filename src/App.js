@@ -14,6 +14,7 @@ import ContactUs from './components/ContactUs';
 const App = () => {
   return (
     <div className="app-container">
+      
       <GlobalStyle />
       <div className="background-wrapper"></div>
       {/* <Navbar /> */}
