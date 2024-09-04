@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ERP from './components/ERP';
 import CustomApplicationDevelopment from './components/CustomApplicationDevelopment';
 import RFID from './components/RFID';
+import ID from './components/MainContentId';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
       <Route path="/custom-application-development" element={<CustomApplicationDevelopment />} />
       <Route path="/rfid-solutions" element={<RFID />} />
       <Route path="/erp" element={<ERP />} />
+      <Route path="/id" element={<ID />} />
     </Routes>
   </BrowserRouter>
 );

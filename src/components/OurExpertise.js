@@ -113,7 +113,7 @@ const OurExpertise = () => {
           })}
         </Slider>
         <div className='box'>
-          <p> card, arrow, opacity noise, maps api on progress, anchor logo benerin animation agar smooth </p>
+          <p> card, maps api on progress deploy malam ini </p>
         </div>
       </div>
     </section>

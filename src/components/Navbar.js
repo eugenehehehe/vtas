@@ -5,80 +5,98 @@ import flag from '../image/usflag.png';
 import flag2 from '../image/idnflag.png';
 import { FaChevronDown } from 'react-icons/fa';
 import './Navbar.css';
-<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
-// import './CustomApplicationDevelopment';
-// import './RFID';
-// import './ERP';
 
 const Navbar = () => {
     const [activeLanguage, setActiveLanguage] = useState('EN');
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const handleLanguageChange = (language) => {
         setActiveLanguage(language);
     };
+
     const handleScrollToContact = () => {
         const contactSection = document.getElementById('contact-anchor');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
     const handleScrollToTop = () => {
-        document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
-        document.body.scrollTop = 0;  // For Safari
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
 
     return (
         <nav className="nav">
             <Link to="/" onClick={handleScrollToTop}>
-            <div className="logo-container">
+                <div className="logo-container">
                     <img src={logo} alt="Visual Tech Logo" className="logo" />
                 </div>
             </Link>
-            <div className="menu">
+
+            <div className={`menu ${menuOpen ? 'active' : ''}`}>
                 <div className="menu-item">
                     <a href="#expertise" className="nav-item">
                         Our Expertise <FaChevronDown className="dropdown-icon" />
                     </a>
                     <div className="dropdown">
-                        <Link to="/erp" className="dropdown-item">
-                            ERP Microsoft Dynamics 365 F&O Implementation
-                        </Link>
-                        <Link to="/custom-application-development" className="dropdown-item">
-                            Custom Application Development
-                        </Link>
-                        <Link to="/rfid-solutions" className="dropdown-item">
-                            RFID Solutions
-                        </Link>
+                        <Link to="/erp" className="dropdown-item">ERP Microsoft Dynamics 365 F&O Implementation</Link>
+                        <Link to="/custom-application-development" className="dropdown-item">Custom Application Development</Link>
+                        <Link to="/rfid-solutions" className="dropdown-item">RFID Solutions</Link>
                     </div>
                 </div>
                 <a href="#services" className="nav-item">Our Services</a>
-                <Link to="/" onClick={handleScrollToContact} className='nav-item'>
-                    Contact Us
-                </Link>
+                <Link to="/" onClick={handleScrollToContact} className='nav-item'>Contact Us</Link>
             </div>
+
             <div className="language-buttons">
                 <img
                     src={flag}
                     alt="US Flag"
-                    className={`small-logo ${activeLanguage === 'EN' ? '' : 'inactive-flag'}`}
+                    className={`small-logo ${activeLanguage === 'EN' ? 'active-flag' : 'inactive-flag'}`}
+                    onClick={() => {
+                        handleLanguageChange('EN');
+                        window.location.href = '/';
+                    }}
                 />
                 <button
-                    className={`language-button ${activeLanguage === 'ID' ? 'active' : ''}`}
-                    onClick={() => handleLanguageChange('EN')}>
+                    className={`language-button ${activeLanguage === 'EN' ? 'inactive' : 'active'}`}
+                    onClick={() => {
+                        handleLanguageChange('ID');
+                        window.location.href = '/';
+                    }}
+                >
                     EN
                 </button>
                 <span>|</span>
                 <button
-                    className={`language-button ${activeLanguage === 'EN' ? 'active' : ''}`}
-                    onClick={() => handleLanguageChange('ID')}>
+                    className={`language-button ${activeLanguage === 'EN' ? 'active' : 'inactive'}`}
+                    onClick={() => {
+                        handleLanguageChange('ID');
+                        window.location.href = '/id';
+                    }}
+                >
                     ID
                 </button>
                 <img
                     src={flag2}
                     alt="Indonesia Flag"
-                    className={`small-logo ${activeLanguage === 'ID' ? '' : 'inactive-flag'}`}
+                    className={`small-logo ${activeLanguage === 'ID' ? 'active-flag' : 'inactive-flag'}`}
+                    onClick={() => {
+                        handleLanguageChange('ID');
+                        window.location.href = '/id';
+                    }}
                 />
+            </div>
 
+            <div className="hamburger" onClick={toggleMenu}>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>
     );

@@ -36,38 +36,62 @@ body {
   width: 100%;
   z-index: 1;
   position: relative; 
-  margin-left: 14rem;
+  margin-left: 12rem; /* Mengurangi margin kiri untuk menggeser ke kiri */
   margin-top: 8rem; 
+  transform: translateX(-10px); /* Geser ke kiri sedikit */
+  transition: all 0.3s ease; /* Efek transisi agar smooth */
 }
 
-.main-section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+@media (max-width: 768px) {
+  .main-section {
+    margin-left: 1rem; /* Penyesuaian margin kiri di layar lebih kecil */
+    transform: translateX(-5px); /* Geser lebih sedikit pada layar kecil */
+  }
 }
 
-.main-section > * {
-  z-index: 2;
-  position: relative;
+@media (max-width: 480px) {
+  .main-section {
+    margin-left: 0.5rem; /* Penyesuaian margin kiri di layar yang sangat kecil */
+    transform: translateX(-3px); /* Geser sedikit pada layar sangat kecil */
+  }
 }
+
 
 .content-wrapper {
   display: flex;
   align-items: flex-start;
 }
 
+/* Elemen garis yang responsif */
 .line {
-  width: 4px;
-  height: 248px;
+  width: 2%; /* Menggunakan persentase agar mengikuti lebar layar */
+  max-width: 4px; /* Maksimal lebar 4px agar tidak terlalu besar di layar besar */
+  height: 248px; /* Menyesuaikan tinggi berdasarkan viewport */
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 2rem;
   background-color: #E9E9E9; 
-  margin-right: 2rem; 
+  margin-right: 2.9rem;
+  transition: all 0.3s ease; /* Menambahkan transisi untuk efek smooth */
 }
+
+@media (max-width: 768px) {
+  .line {
+    width: 3%; /* Sedikit lebih lebar pada layar kecil untuk visibilitas */
+    max-width: 3px;
+    height: 15vh; /* Sedikit lebih pendek di layar kecil */
+    margin-right: 1rem; /* Mengurangi margin agar tidak terlalu longgar */
+  }
+}
+
+@media (max-width: 480px) {
+  .line {
+    width: 4%; /* Lebih lebar di layar sangat kecil */
+    max-width: 2px; 
+    height: 12vh; /* Lebih pendek untuk menyesuaikan konten */
+    margin-right: 0.5rem;
+  }
+}
+
 
 .content-text {
   display: flex;
