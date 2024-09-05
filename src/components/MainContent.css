@@ -130,8 +130,8 @@ body {
   max-width: 900px;
   min-height: 84px;
   line-height: 21.04px;
-  word-spacing: 5px;
+  word-spacing: 2.9px;
   text-align: justify;
   font-family: "Karla", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
 }

@@ -12,7 +12,7 @@ html, body {
   backdrop-filter: blur(15px) saturate(180%);
   border-radius: 40px;
   width: calc(100% - 2rem);
-  max-width: 1200px;
+  max-width: 1117px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: fixed;
   top: 1rem;
@@ -137,15 +137,15 @@ html, body {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   position: absolute;
-  top: 110%; /* Adjust positioning as needed */
+  top: 100%;
   left: 14%;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  min-width: 400px; /* Adjust to increase width */
-  width: 500px; /* Adjust width as needed */
+  min-width: 400px; 
+  width: 500px; 
   z-index: 1000;
   transition: opacity 0.3s ease;
 }
