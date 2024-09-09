@@ -20,7 +20,7 @@ html, body {
   transform: translateX(-50%);
   z-index: 1000;
   margin-top: 2rem;
-  overflow: visible; /* Pastikan ini agar dropdown tidak terpotong */
+  overflow: visible; 
 }
 
 .nav::before {
@@ -36,10 +36,10 @@ html, body {
   background-size: cover;
   background-blend-mode: lighten;
   pointer-events: none;
-  border-radius: inherit; /* Ini untuk memastikan radius tetap sesuai */
+  border-radius: inherit; 
 }
 
-/* Tambahan: pastikan padding atau border pada elemen lain tidak mengganggu */
+
 .nav::after {
   content: "";
   position: absolute;
@@ -127,28 +127,39 @@ html, body {
   color: inherit;
 }
 
-/* Dropdown styles */
 .menu-item {
   position: relative;
 }
 
 .dropdown {
-  display: none;
+  display: block;
+  visibility: hidden; 
+  opacity: 0; 
   font-family: "Karla", sans-serif;
   font-weight: 700;
   position: absolute;
-  top: 100%;
+  top: 140%; 
   left: 14%;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  min-width: 400px; 
-  width: 500px; 
+  min-width: 400px;
+  width: 500px;
   z-index: 1000;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none; 
 }
+
+
+.menu-item:hover .dropdown,
+.menu-item .dropdown:hover {
+  visibility: visible; 
+  opacity: 1; 
+  pointer-events: auto; 
+}
+
 
 .dropdown::before {
   content: "";
@@ -163,7 +174,7 @@ html, body {
   background-size: cover;
   background-blend-mode: lighten;
   pointer-events: none;
-  border-radius: inherit; /* Ini untuk memastikan radius tetap sesuai */
+  border-radius: inherit;
 }
 
 .dropdown::after {
@@ -176,7 +187,6 @@ html, body {
   border-radius: inherit;
   z-index: -1;
   pointer-events: none;
-  background-repeat: no-repeat;
 }
 
 .dropdown-icon{
@@ -188,21 +198,22 @@ html, body {
 .dropdown-item {
   text-decoration: none;
   color: #333;
-  margin-left: 2px;
-  padding: 0.5rem 0;
-  display: block;
+  padding: 0.5rem 0 0.5rem 10px; 
+  display: block; 
+  border-radius: 10px;
   font-size: 15px;
   font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .dropdown-item:hover {
-  color: #101010;
-  padding-left: 2px ;
-  border-radius: 10px;
-  background-color: #fbfbfb;
   color: #2b2b2b;
+  background-color: #fbfbfb;
+  border-radius: 10px;
   z-index: 1;
 }
+
+
 
 .menu-item:hover .dropdown,
 .menu-item .dropdown:hover {
