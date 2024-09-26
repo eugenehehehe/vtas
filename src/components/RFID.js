@@ -9,11 +9,11 @@ import icon5 from '../image/19.png';
 import icon6 from '../image/20.png';
 import icon7 from '../image/22.png';
 import icon8 from '../image/21.png';
-import vector1 from '../image/Vector1.png';
-import vector2 from '../image/Vector2.png';
-import vector3 from '../image/Vector3.png';
-import vector4 from '../image/Vector4.png';
-import vector5 from '../image/Vector5.png';
+// import vector1 from '../image/Vector1.png';
+// import vector2 from '../image/Vector2.png';
+// import vector3 from '../image/Vector3.png';
+// import vector4 from '../image/Vector4.png';
+// import vector5 from '../image/Vector5.png';
 
 const RFID = () => {
     useEffect(() => {

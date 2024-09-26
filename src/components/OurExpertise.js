@@ -7,21 +7,9 @@ import erp from '../image/ERP.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const NextArrow = ({ onClick }) => (
-  <button className="slick-next custom-arrow" onClick={onClick}>
-    <span>Next</span>
-  </button>
-);
-
-const PrevArrow = ({ onClick }) => (
-  <button className="slick-prev custom-arrow" onClick={onClick}>
-    <span>Prev</span>
-  </button>
-);
-
 const OurExpertise = () => {
   const [activeSlide, setActiveSlide] = useState(1);
-  const sliderRef = useRef(null); 
+  const sliderRef = useRef(null); // Slider reference to control the carousel programmatically
 
   const settings = {
     infinite: true,
@@ -30,10 +18,8 @@ const OurExpertise = () => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '0',
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
     beforeChange: (current, next) => {
-      setActiveSlide(next); 
+      setActiveSlide(next);
     },
     responsive: [
       {
@@ -43,8 +29,6 @@ const OurExpertise = () => {
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '0',
-          nextArrow: <NextArrow />,
-          prevArrow: <PrevArrow />,
         },
       },
       {
@@ -54,8 +38,6 @@ const OurExpertise = () => {
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '0',
-          nextArrow: <NextArrow />,
-          prevArrow: <PrevArrow />,
         },
       },
     ],
@@ -85,6 +67,14 @@ const OurExpertise = () => {
     },
   ];
 
+  const goToPrev = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const goToNext = () => {
+    sliderRef.current.slickNext();
+  };
+
   return (
     <section className="our-expertise-section" id="expertise">
       <div className="container">
@@ -106,12 +96,21 @@ const OurExpertise = () => {
                 <div className="expertise-content">
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <a href={card.link} className="learn-more">Learn More</a>
+                  <a href={card.link} className="learn-more">Learn More</a> 
                 </div>
               </div>
             );
           })}
         </Slider>
+        
+        <div className="carousel-controls">
+  <button className="carousel-btn prev-btn" onClick={goToPrev}>
+    &lt; 
+  </button>
+  <button className="carousel-btn next-btn" onClick={goToNext}>
+    &gt; 
+  </button>
+</div>
       </div>
     </section>
   );
