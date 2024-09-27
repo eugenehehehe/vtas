@@ -55,7 +55,7 @@ html, body {
 
 @media (max-width: 768px) {
   .nav {
-    flex-direction: row; /* Keep the main navbar in a row on mobile */
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -78,10 +78,10 @@ html, body {
   }
 }
 
-/* Menu styles */
+
 .menu {
   display: flex;
-  align-items: center; /* Aligns the menu items in the center vertically */
+  align-items: center;
   gap: 1rem;
 }
 
@@ -91,9 +91,9 @@ html, body {
   top: 100%;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.272); /* Same lighter background */
-  backdrop-filter: blur(15px) saturate(100%); /* Same reduced saturation */
-  background: url('../image/noiserec.png'); /* Same noise background */
+  background-color: rgba(255, 255, 255, 0.272);
+  backdrop-filter: blur(15px) saturate(100%);
+  background: url('../image/noiserec.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -109,7 +109,7 @@ html, body {
   width: 100%;
   height: 100%;
   background: url('../image/noiserec.png');
-  opacity: 0.05; /* Thinner noise effect */
+  opacity: 0.05;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
@@ -129,7 +129,7 @@ html, body {
   transition: all 0.3s ease;
 }
 
-/* Hamburger Menu Icon */
+
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -141,23 +141,23 @@ html, body {
 
 .hamburger .line {
   display: block;
-  width: 25px; /* Adjust the width of the lines */
-  height: 0.5px; /* Adjust the height to make it thinner */
-  margin: 4px auto; /* Space between lines */
-  transition: all 0.3s ease; /* Smooth transition for the cross effect */
-  background-color: #000; /* Color of the lines */
+  width: 25px;
+  height: 0.5px;
+  margin: 4px auto;
+  transition: all 0.3s ease;
+  background-color: #000;
 }
 
 .hamburger.open .line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px); /* Top line rotates to form the cross */
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.open .line:nth-child(2) {
-  opacity: 0; /* Middle line fades out */
+  opacity: 0;
 }
 
 .hamburger.open .line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px); /* Bottom line rotates to form the cross */
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 768px) {
@@ -167,7 +167,7 @@ html, body {
 
   .menu.open {
     display: flex;
-    flex-direction: column; /* Display the menu items vertically after the hamburger is clicked */
+    flex-direction: column;
     position: absolute;
     top: 120%;
     left: 0;

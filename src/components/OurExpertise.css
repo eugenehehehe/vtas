@@ -40,14 +40,14 @@ body {
 
 .slick-list {
   display: flex;
-  justify-content: center; /* Center all cards */
+  justify-content: center;  
   margin: 0 -15px;
   overflow: hidden;
 }
 
 .slick-slide {
   text-align: center;
-  width: calc(33.33% - 30px); /* Ensures 3 cards are displayed at once */
+  width: calc(33.33% - 30px);  
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -57,7 +57,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%; /* Use width instead of max-width for better alignment */
+  width: 100%; 
   text-align: center;
   padding: 2rem;
   backdrop-filter: blur(10px);
@@ -67,7 +67,7 @@ body {
   opacity: 0.8; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Ensures content stays vertically centered */
+  justify-content: center;  
   align-items: center;
 }
 
@@ -77,7 +77,7 @@ body {
   opacity: 1;
 }
 
-/* Optional: Ensure no card is rotated or scaled */
+ 
 .expertise-card.left,
 .expertise-card.right {
   transform: none;
