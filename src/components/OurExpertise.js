@@ -72,10 +72,14 @@ const OurExpertise = () => {
     {
       image: custom,
       title: "Custom Application Development",
-      description:
-        "At Visual Tech Asia, we craft bespoke mobile and web applications designed to meet your unique business needs. Our dedicated team of developers and designers leverage the latest technologies to deliver high-quality, scalable, and user-friendly applications.",
+      description: (
+        <>
+          At Visual Tech Asia, we craft bespoke <strong>mobile</strong> and <strong>web</strong> applications designed to meet your unique business needs. Our dedicated team of developers and designers leverage the latest technologies to deliver high-quality, scalable, and user-friendly applications.
+        </>
+      ),
       link: "custom-application-development",
-    },
+    }
+    ,
     {
       image: rfid,
       title: "RFID Solutions",
@@ -107,7 +111,7 @@ const OurExpertise = () => {
                 <div className="expertise-content">
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>
-                  <a href={card.link} className="learn-more">Learn More</a>
+                  <a href={card.link} className="learn-more">Learn More&nbsp;&nbsp;&gt;</a>
                 </div>
               </div>
             );

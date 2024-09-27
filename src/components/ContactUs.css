@@ -165,12 +165,44 @@
     min-height: 211px;
 }
 
-
-.map {
-    margin-top: 30px;
+.map-wrapper {
+    width: 80%; /* Full width */
+    margin-top: 50px;
+    margin-left: 140px;
+    position: relative; /* For absolute positioning of iframe */
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
 }
 
-.map img {
-    max-width: 100%;
-    height: auto;
+.responsive-map {
+    position: absolute; /* Positioning inside the wrapper */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 0; /* Remove border */
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .contact-details {
+        margin-left: 0; /* Reset margin on smaller screens */
+        margin-bottom: 20px; /* Add space below */
+    }
+
+    .qr-section {
+        margin-top: 20px; /* Space above QR section */
+    }
+
+    .qr-code-box {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Reset margin */
+        padding: 10px; /* Adjust padding */
+    }
+    .map-wrapper {
+        padding-top: 75%; /* Aspect ratio for mobile devices */
+    }
 }

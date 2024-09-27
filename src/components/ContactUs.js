@@ -42,15 +42,15 @@ const ContactUs = () => {
 
                 </div>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1492479649305!2d106.6198921!3d-6.244053600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd45edf66449%3A0xbeb406fa930af266!2sVisual%20Tech%20Asia!5e0!3m2!1sid!2sid!4v1725545904411!5m2!1sid!2sid"
-                width={1065}
-                height={413}
-                style={{ border: 0, marginTop: '50px' }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-            />
+            <div className="map-wrapper">
+                <iframe
+                    className="responsive-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1492479649305!2d106.6198921!3d-6.244053600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd45edf66449%3A0xbeb406fa930af266!2sVisual%20Tech%20Asia!5e0!3m2!1sid!2sid!4v1725545904411!5m2!1sid!2sid"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                />
+            </div>
         </section>
     );
 };

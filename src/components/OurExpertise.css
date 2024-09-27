@@ -38,13 +38,18 @@ body {
   color: #E9E9E9;
 }
 
-.slick-slide {
-  padding: 0 15px; /* Adjust padding if needed */
-  box-sizing: border-box;
+.slick-list {
+  display: flex;
+  justify-content: center; /* Center all cards */
+  margin: 0 -15px;
+  overflow: hidden;
 }
 
-.slick-list {
-  margin: 0 -10px;
+.slick-slide {
+  text-align: center;
+  width: calc(33.33% - 30px); /* Ensures 3 cards are displayed at once */
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .expertise-card {
@@ -59,7 +64,11 @@ body {
   color: #fff;
   transition: transform 0.3s ease;
   position: relative;
-  opacity: 0.8; /* Adjust opacity if needed */
+  opacity: 0.8; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures content stays vertically centered */
+  align-items: center;
 }
 
 .expertise-card.active {
@@ -88,6 +97,9 @@ body {
 
 
 .expertise-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -96,7 +108,6 @@ body {
   height: 300px;
   object-fit: contain;
   transition: transform 0.3s ease;
-  justify-content: center;
 }
 
 .expertise-content h3 {

@@ -53,15 +53,10 @@ html, body {
   background-repeat: no-repeat;
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    padding: 1rem;
+    flex-direction: row; /* Keep the main navbar in a row on mobile */
+    justify-content: space-between;
   }
 }
 
@@ -86,15 +81,111 @@ html, body {
 /* Menu styles */
 .menu {
   display: flex;
+  align-items: center; /* Aligns the menu items in the center vertically */
   gap: 1rem;
-  justify-content: center;
+}
+
+.menu.open {
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.272); /* Same lighter background */
+  backdrop-filter: blur(15px) saturate(100%); /* Same reduced saturation */
+  background: url('../image/noiserec.png'); /* Same noise background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  padding: 1rem;
+  border-radius:20px;
+}
+
+.menu.open::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: url('../image/noiserec.png');
+  opacity: 0.05; /* Thinner noise effect */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  pointer-events: none;
+  border-radius: inherit;
+  backdrop-filter: blur(15px);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #000;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 29px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  top: 2.9px;
+}
+
+.hamburger .line {
+  display: block;
+  width: 25px; /* Adjust the width of the lines */
+  height: 0.5px; /* Adjust the height to make it thinner */
+  margin: 4px auto; /* Space between lines */
+  transition: all 0.3s ease; /* Smooth transition for the cross effect */
+  background-color: #000; /* Color of the lines */
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* Top line rotates to form the cross */
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0; /* Middle line fades out */
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px); /* Bottom line rotates to form the cross */
 }
 
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;
-    align-items: center;
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column; /* Display the menu items vertically after the hamburger is clicked */
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    top: 5px;
+  }
+
+  .logo {
+    margin-bottom: 0;
   }
 }
 
@@ -234,6 +325,7 @@ html, body {
   align-items: center;
   gap: 0.25rem;
   text-decoration: none;
+  margin-right: 0.5rem;
 }
 
 .small-logo {
