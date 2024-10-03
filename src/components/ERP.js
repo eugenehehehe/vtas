@@ -58,7 +58,7 @@ const ERP = () => {
                         </div>
                     </div>
                 </div>
-                {/* <img src={vector1} alt="vector1" className="vector" /> */}
+                {/* <img src={vector1} alt="vector1" className="vectorE" /> */}
 
                 <div className="stepe">
                     <div className="text2">

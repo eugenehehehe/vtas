@@ -240,12 +240,13 @@ html, body {
   width: 500px;
   z-index: 1000;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  pointer-events: none; 
+  pointer-events: auto; 
 }
 
 
 .menu-item:hover .dropdown,
 .menu-item .dropdown:hover {
+  display: block;
   visibility: visible; 
   opacity: 1; 
   pointer-events: auto; 
