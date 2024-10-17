@@ -37,15 +37,16 @@ body {
     text-align: left;
 }
 
-.section {
+.sectione {
     margin-top: 6rem;
     text-align: left;
-    padding-left: 15rem;
-    margin-bottom: 4rem;
+    margin-left: 15rem;
+    margin-bottom: 15rem;
     color: #E9E9E9;
+    transition: margin-left 0.5s ease;
 }
 
-.section p {
+.sectione p {
     font-size: 18px;
     line-height: 21.04px;
     margin-top: 2rem;
@@ -90,17 +91,7 @@ body {
     margin-bottom: 6rem;
 }
 
-/* .vectorE {
-    position:absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 500px;
-    height: 500px;
-    margin-left: 1px;
-    height: auto;
-} */
+
 
 
 .stepe .text1 {
@@ -124,14 +115,33 @@ body {
 
 .stepe h2 {
     font-size: 54.32px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.9rem;
     color: #E9E9E9;
     font-weight: 800;
     max-width: 814px;
     max-height: 128px;
 
 }
-
+.stepe:nth-child(1) img {
+    width: 531px;
+    height: 348px;
+}
+.stepe:nth-child(4) img {
+    width: 325px;
+    height: 380px;
+}
+.stepe:nth-child(5) img {
+    width: 475px;
+    height: 370px;
+}
+.stepe:nth-child(6) img {
+    width: 518px;
+    height: 392px;
+}
+.stepe:nth-child(7) img {
+    width: 543px;
+    height: 360px;
+}
 .stepe p {
     font-size: 17.43px;
     line-height: 20.38px;
@@ -140,39 +150,25 @@ body {
     font-weight: 500;
 }
 
-.stepe img.icon {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    border-radius: 50px;
-    background: radial-gradient(circle, #19174b 0%, #08062200 70%);
-}
-/* .step img.icons {
-    width: 241px;
-    height: 84px;
-    position: relative;
-    border-radius: 50px;
-    background: radial-gradient(circle, #19174b 0%, #08062200 70%);
-} */
+
+
 
 
 .left-icon {
     order: 0;
-    z-index: 2; /*if needed*/
+    z-index: 2;
 }
 
 .right-icon {
     order: 3;
-    z-index: 2; /*if needed*/
+    z-index: 2;
 }
 
 .stepe:nth-child(even) .left-icon {
     order: 3;
 }
 
-/* .step:nth-child(even) .right-icon {
-  order: 1;
-} */
+
 
 .stepe:nth-child(even) .text {
     order: 2;
@@ -207,13 +203,13 @@ body {
     width: 1140px;
     margin-bottom: 15rem;
     background: rgba(202, 202, 202, 0.728);
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 55px;
     position: relative;
     flex-direction: row;
     background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.297), rgba(202, 202, 202, 0.27));
     background-blend-mode: overlay;
-    /* justify-content: space-between; */
+   
 }
 
 .benefiterp img {
@@ -250,16 +246,14 @@ body {
 }
 
 
-.benefiterp:nth-child(1) p,
-.benefiterp:nth-child(3) p {
-    text-align: right;
-    margin-left: 620px;
-}
 
-.benefiterp:nth-child(1) h3 {
-    margin-left: 320px;
-}
-.benefiterp:nth-child(3) h3 {
+
+.benefiterp:nth-child(1) h3,
+.benefiterp:nth-child(1) p,
+.benefiterp:nth-child(3) h3,
+.benefiterp:nth-child(3) p{
+    text-align: right;
+    padding-left: 2px;
     margin-left: 550px;
 }
 
@@ -288,9 +282,10 @@ body {
 }
 .erp-logos {
     display: flex;
-    /* justify-content: space-around; */
+   
     align-items: center;
-    margin: 2rem 0;
+    margin: 2rem 0 ;
+    margin-left: -0.5rem;
     gap: 2rem;
 }
 
@@ -309,4 +304,166 @@ body {
 .erp-logo {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .custom.bg {
+        padding-top: 60px;
+    }
+
+    .sectione {
+        padding: 0 1rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+            margin-left: 2rem; 
+    transform: translateX(-10px); 
+    }
+
+    .headinge {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sectione p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 5rem;
+    }
+
+    .stepse {
+        gap: 4rem;
+      }
+    
+      .stepe {
+        flex-direction: column;
+        margin-bottom: 4rem;
+      }
+    
+      .stepe h2 {
+        font-size: 32px;
+        max-width: 100%;
+      }
+    
+      .stepe p {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 100%;
+      }
+    
+      .stepe img.icon {
+        width: 100%;
+        height: auto;
+        max-width: 260px;
+        border-radius: 30px;
+      }
+        .stepe:nth-child(4) img {
+            width: 185px;
+            height: 216px;
+      }
+    
+      .text1, .text2 {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+        margin: 0 2rem 0 2rem;
+      }
+    
+      .stepe:nth-child(even) .left-icon, 
+      .stepe:nth-child(even) .right-icon {
+        order: 0;
+      }
+      
+      .stepe .text1, .stepe .text2 {
+        order: 1;
+      }
+
+    .erp-logos {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0; 
+    }
+
+    .erp-logo-box {
+        max-width: 90%;
+        margin: 1rem 0;
+    }
+
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .benefiterp:nth-child(1) h3,
+.benefiterp:nth-child(1) p,
+.benefiterp:nth-child(3) h3,
+.benefiterp:nth-child(3) p{
+    text-align: right;
+    padding-right: 5px;
+    margin-left: 10px;
+    max-height: 200px;
+}
+
+   
+
+    .benefiterp img {
+        width: 20%;
+        height: 20%;
+        max-width: 200px; 
+        max-height: 200px;
+        margin-bottom: 1rem;
+    }
+    .why-f {
+        margin-top: 5rem;
+    }
+
+    .why-f h2 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefiterp {
+        padding: 1rem;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        width: 400px;
+        height: 200px;
+
+    }
+   
+    .benefiterp:nth-child(3) img {
+        width: 150px;
+        height: 100px;
+        left: -70px;
+    }
+    .benefiterp:nth-child(4) img {
+        width: 658px;
+        height: 518px;
+        left: auto;
+        right: -170px;
+    }
+    
+    .benefiterp:nth-child(1) img {
+        width: 150px;
+        height: 100px;
+        left: -49px;
+        top: 9rem;
+    }
+    
+    .benefiterp:nth-child(2) img {
+        width: 160px;
+        height: 140px;
+        top: 10rem;
+        right: -60px;
+    }
+    
+    .benefiterp h3 {
+        font-size: 1.2rem;
+        margin-top: -3.5rem;
+        text-align: center;
+    }
+
+    .benefiterp p {
+        font-size: 0.9rem;
+    }
 }
