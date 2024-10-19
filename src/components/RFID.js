@@ -34,7 +34,7 @@ const RFID = () => {
             </div>
             <div className="steps">
                 <div className="step">
-                    <img src={icon1} alt="Consultation & Planning" className="icon left-icon" style={{ width: '460px', height: '314px' }} />
+                    <img src={icon1} alt="Consultation & Planning" className="icon left-icon" />
                     <div className="text1">
                         <h2>Consultation & Planning</h2>
                         <p>We begin with a detailed consultation to understand your tracking and management needs. This includes identifying the best RFID technology and solutions that align with your business goals.</p>
@@ -47,12 +47,12 @@ const RFID = () => {
                         <h2>System Design & Integration</h2>
                         <p>Our experts design an RFID system tailored to your requirements, ensuring seamless integration with your existing processes and systems. This includes hardware selection, software development, and system architecture planning.</p>
                     </div>
-                    <img src={icon2} alt="System Design & Integration" className="icon right-icon" style={{ width: '402px', height: '292px' }} />
+                    <img src={icon2} alt="System Design & Integration" className="icon right-icon" />
                 </div>
                 {/* <img src={vector2} alt="vector2" className="vector" /> */}
 
                 <div className="step">
-                    <img src={icon3} alt="Tagging & Implementation" className="icon left-icon" style={{ width: '385px', height: '325pxpx' }} />
+                    <img src={icon3} alt="Tagging & Implementation" className="icon left-icon" />
                     <div className="text1">
                         <h2>Tagging & Implementation</h2>
                         <p>We provide and implement RFID tags for your assets, ensuring optimal placement and configuration for accurate tracking. Our implementation process is efficient, minimizing downtime and disruption.</p>
@@ -65,12 +65,12 @@ const RFID = () => {
                         <h2>Data Collection & Management</h2>
                         <p>Our RFID solutions enable real-time data collection and management, giving you complete visibility and control over your assets. This includes inventory management, asset tracking, and process automation.</p>
                     </div>
-                    <img src={icon4} alt="Data Collection & Management" className="icon right-icon" style={{ width: '413px', height: '370px' }} />
+                    <img src={icon4} alt="Data Collection & Management" className="icon right-icon" />
                 </div>
                 {/* <img src={vector4} alt="vector4" className="vector" /> */}
 
                 <div className="step">
-                    <img src={icon5} alt="Training & Support" className="icon left-icon" style={{ width: '341pxpx', height: '361px' }} />
+                    <img src={icon5} alt="Training & Support" className="icon left-icon" />
                     <div className="text1">
                         <h2>Training & Support</h2>
                         <p>We offer comprehensive training for your staff to ensure they are proficient in using the RFID system. Additionally, our ongoing support services ensure that your system remains reliable and efficient.</p>

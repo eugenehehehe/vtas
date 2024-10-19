@@ -22,6 +22,7 @@ html, body {
 body {
   margin: 0;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,38 +54,102 @@ body {
 }
 
 .expertise-card {
-  background: rgba(255, 255, 255, 0.418);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
+  max-width: 300px; /* Limit max width for consistent sizing */
   text-align: center;
   padding: 2rem;
   backdrop-filter: blur(10px);
   color: #fff;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, scale 0.3s ease, opacity 0.3s ease;
   position: relative;
-  opacity: 0.8; 
+  opacity: 0.5;
   display: flex;
   flex-direction: column;
   justify-content: center;  
   align-items: center;
+  transform-origin: center;
 }
 
+/* Style for the active card */
 .expertise-card.active {
+  transform: scale(1) rotate(0deg);
   z-index: 3;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
 
- 
-.expertise-card.left,
-.expertise-card.right {
-  transform: none;
+/* Style for the left card */
+.expertise-card.left {
+  transform: scale(0.8) rotate(-15deg);
   z-index: 2;
+  opacity: 0.7;
 }
 
+/* Style for the right card */
+.expertise-card.right {
+  transform: scale(0.8) rotate(15deg);
+  z-index: 2;
+  opacity: 0.7;
+}
 
+/* Media queries for smaller screens */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 50px;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  .slick-slide {
+    width: calc(50% - 20px);
+  }
+
+  .expertise-card {
+    max-width: 300px;
+    /* padding: 1.5rem; */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .slick-slide {
+    width: calc(100% - 20px);
+  }
+
+  .expertise-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* Adjust card scaling and rotation for smaller screens */
+  .expertise-card.left,
+  .expertise-card.right {
+    transform: scale(0.9) rotate(0deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 30px;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .expertise-card {
+    padding: 0.8rem;
+  }
+}
+
+  
 /* .expertise-card.left {
   transform: rotate(-15deg) scale(0.9) translateX(0%);
   z-index: 2;

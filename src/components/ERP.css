@@ -434,13 +434,15 @@ body {
     .benefiterp:nth-child(3) img {
         width: 150px;
         height: 100px;
-        left: -70px;
+        left: -50px;
+        top: 10rem;
     }
     .benefiterp:nth-child(4) img {
-        width: 658px;
-        height: 518px;
+        width: 148px;
+        height: 128px;
         left: auto;
-        right: -170px;
+        top: 9rem;
+        right: -40px;
     }
     
     .benefiterp:nth-child(1) img {
@@ -451,15 +453,15 @@ body {
     }
     
     .benefiterp:nth-child(2) img {
-        width: 160px;
-        height: 140px;
-        top: 10rem;
+        width: 150px;
+        height: 120px;
+        top: 10.5rem;
         right: -60px;
     }
     
     .benefiterp h3 {
         font-size: 1.2rem;
-        margin-top: -3.5rem;
+        margin-top: -2.9rem;
         text-align: center;
     }
 

@@ -6,7 +6,7 @@ html, body {
 
 .app-container {
   min-height: 540vh; 
-  background-image: url('../src/image/bgM2.png');
+  background-image: url('../src/image/bgM2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@ html, body {
 }
 
 .app-container.loaded {
-  background-image: url('../src/image/bgM2.png'); /* Main background image */
+  background-image: url('../src/image/bgM2.webp'); /* Main background image */
 }
 
 .App {

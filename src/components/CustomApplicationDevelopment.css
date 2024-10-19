@@ -62,11 +62,12 @@ body {
   font-weight: 800;
   font-family: "karla", sans-serif;
   line-height: 93.59px;
+  padding-top: 4rem;
   color: #E9E9E9;
   -webkit-text-stroke: 1.2px #E9E9E9;
 }
 
-.subheadingc {
+/* .subheadingc {
   margin: 0;
   letter-spacing: 2px;
   font-weight: 800;
@@ -75,7 +76,7 @@ body {
   font-family: "karla", sans-serif; 
   color: #E9E9E9;
   -webkit-text-stroke: 1.2px #E9E9E9;
-}
+} */
 
 .steps.c {
   display: flex;
@@ -165,4 +166,57 @@ body {
   padding-left: 2rem;
   border-radius: 50px;
   background: radial-gradient(circle, #19174b 0%, #08062200 50%);
+}
+
+@media (max-width: 768px) {
+  .background2 {
+    min-height: 350vh;
+    background-image: url('../image/appdevbg.png');
+    background-size: cover;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .section {
+    padding-left: 1rem; /* Sesuaikan padding */
+    margin-bottom: 2rem;
+    margin-left: -12.5rem;
+    margin-right: 2rem;
+    transition: margin-left 0.5s ease;
+  }
+  .icon-6 {
+    height: 120px; 
+    width: 260px;   
+    position: relative;
+    padding-left: 2rem;
+    border-radius: 50px;
+    background: radial-gradient(circle, #19174b 0%, #08062200 50%);
+  }
+  .headingc {
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 93.59px;
+    max-width: 1045px;
+  }
+
+  .steps.c {
+    margin-top: 3rem;
+  }
+
+  .stepc {
+    margin-bottom: 2rem;
+  }
+
+  .stepc h2 {
+    font-size: 1.8rem;
+  }
+
+  .stepc p {
+    font-size: 13px;
+  }
+
+  .stepc img.icon {
+    width: 180px;
+    height: 180px;
+  }
 }

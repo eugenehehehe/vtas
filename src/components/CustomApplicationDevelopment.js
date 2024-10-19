@@ -24,8 +24,7 @@ const CustomApplicationDevelopment = () => {
     <section className="background2">
       <Navbar />
       <div className="section">
-        <div className="headingc">Custom Application</div>
-        <div className="subheadingc">Development</div>
+        <div className="headingc">Custom Application <br/> Development</div>
         <p>At Visual Tech Asia, we craft bespoke <strong style={{"font-weight": 900}}>mobile and web</strong> applications designed to meet your unique business needs. Our dedicated team of developers and designers leverage the latest technologies to deliver high-quality, scalable, and user-friendly applications.</p>
       </div>
       <div className="steps c">
