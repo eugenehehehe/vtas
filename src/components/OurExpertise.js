@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const OurExpertise = () => {
-  const [activeSlide, setActiveSlide] = useState(1);
+  const [activeSlide, setActiveSlide] = useState(0);
   const sliderRef = useRef(null); 
 
   const settings = {
@@ -33,13 +33,16 @@ const OurExpertise = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => {
-      setActiveSlide(next); 
+      setActiveSlide(next);
+    },
+    afterChange: (current) => {
+      setActiveSlide(current);
     },
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '0',
@@ -48,7 +51,7 @@ const OurExpertise = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -88,29 +91,31 @@ const OurExpertise = () => {
       link: "rfid-solutions",
     },
   ];
-
+  const getCircularIndex = (index) => (index + 1) % cards.length;
   return (
     <section className="our-expertise-section" id="expertise">
       <div className="container">
         <h2 className="section-title">Our Expertise</h2>
         <Slider {...settings} ref={sliderRef}>
           {cards.map((card, index) => {
-            const isActive = index === activeSlide;
-            const isLeft = index === (activeSlide - 1 + cards.length) % cards.length;
-            const isRight = index === (activeSlide + 1) % cards.length;
+            const isActive = getCircularIndex(activeSlide) === index;
+            const isLeft = getCircularIndex(activeSlide - 1) === index;
+            const isRight = getCircularIndex(activeSlide + 1) === index;
+
 
             return (
               <div
-  className={`expertise-card ${isActive ? 'active' : ''} ${isLeft ? 'left' : ''} ${isRight ? 'right' : ''}`}
-  key={index}
->
-
+                className={`expertise-card ${isActive ? 'active' : ''} ${isLeft ? 'left' : ''} ${isRight ? 'right' : ''}`}
+                key={index}
+              >
                 <div className="expertise-image">
                   <img src={card.image} alt={card.title} />
                 </div>
                 <div className="expertise-content">
                   <h3>{card.title}</h3>
-                  <p>{card.description}</p>
+                  <p>
+                    {card.description}
+                  </p>
                   <a href={card.link} className="learn-more">Learn More&nbsp;&nbsp;&gt;</a>
                 </div>
               </div>
