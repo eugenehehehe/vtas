@@ -51,7 +51,7 @@ const CustomApplicationDevelopment = () => {
         </div>
         <div className="stepc">
           <div className="text2">
-            <h2>Integration & Customization</h2>
+            <h2>Integration & <br/>Customization</h2>
             <p>We ensure your application integrates seamlessly with existing systems and third-party services. Our customization capabilities mean we can adapt the solution to fit your specific needs.</p>
           </div>
           <img src={icon4} alt="Integration & Customization" className="icon right-icon"/>

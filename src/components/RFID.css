@@ -24,7 +24,7 @@ body {
   }
 .background {
     min-height: 350vh;
-    background-image: url('../image/RFIDbg.png');
+    background-image: url('../image/RFIDbg.webp');
     background-size: cover;
     margin: 0;
     padding-top: 180px;
@@ -130,6 +130,10 @@ body {
     max-width: 785px;
 }
 
+.step .text2 h2 {
+    text-align: right;
+    margin-left: -7rem;
+}
 .step .text2 p {
     text-align: right;
     margin-left: auto;
@@ -142,6 +146,7 @@ body {
     color: #E9E9E9;
     -webkit-text-stroke: 2px #E9E9E9;
     font-weight: 800;
+    line-height: 63.5px;
     min-width: 900px;
 }
 
@@ -228,7 +233,7 @@ body {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url('../image/noise.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.297), rgba(202, 202, 202, 0.27));
+    background-image: url('../image/noiserec.png'), linear-gradient(to bottom, rgba(202, 202, 202, 0.297), rgba(202, 202, 202, 0.27));
     background-blend-mode: overlay;
 }
 
@@ -263,11 +268,12 @@ body {
 .benefit:nth-child(1) p,
 .benefit:nth-child(3) p {
     text-align: right;
-    margin-left: 520px;
+    margin-left: 490px;
 }
 
 .benefit:nth-child(1) h3 {
-    margin-left: 300px;
+    margin-left: 16rem;
+    max-width: 800px;
     letter-spacing: 1px;
     -webkit-text-stroke: 1px #242335;
 }
@@ -326,6 +332,11 @@ body {
       text-align: center;
       margin-left: 0;
     }
+
+    .step .text2 h2{
+      margin-left: 0;
+      text-align: center;
+    }
   
     .step h2 {
       font-size: 36px;
@@ -346,7 +357,26 @@ body {
       max-width: 300px;
     }
   
-
+    .step:nth-child(1) .left-icon{
+      width: 251px;
+      height: 171px;
+  }
+  .step:nth-child(2) .right-icon{
+      width: 218px;
+      height: 158px;
+  }
+  .step:nth-child(3) .left-icon{
+      width: 202px;
+      height: 171px;
+  }
+  .step:nth-child(4) .right-icon{
+      width: 242px;
+      height: 217px;
+  }
+  .step:nth-child(5) .left-icon{
+      width: 210px;
+      height: 222px;
+  }
 
     .left-icon,
     .right-icon {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../image/VTAAA2.png';
+import logo from '../image/VTAAA2.webp';
 import flag from '../image/usflag.png';
 import flag2 from '../image/idnflag.png';
 import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';

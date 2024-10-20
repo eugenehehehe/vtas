@@ -24,7 +24,7 @@ body {
 }
 .background2 {
   min-height: 350vh;
-  background-image: url('../image/appdevbg.png');
+  background-image: url('../image/appdevbg.webp');
   background-size: cover;
   margin: 0;
   padding-top: 180px;
@@ -62,7 +62,7 @@ body {
   font-weight: 800;
   font-family: "karla", sans-serif;
   line-height: 93.59px;
-  padding-top: 4rem;
+  padding-top: 0;
   color: #E9E9E9;
   -webkit-text-stroke: 1.2px #E9E9E9;
 }
@@ -113,7 +113,7 @@ body {
   font-size: 54.32px;
   margin-bottom: 1rem;
   color: #E9E9E9;
-  -webkit-text-stroke: 1.2px #E9E9E9;
+
   font-family: "Karla", sans-serif;
   font-weight: 900;
   max-width: 785px;
@@ -122,7 +122,7 @@ body {
 .stepc p {
   font-size: 17.43px;
   line-height: 1.5;
-  max-width: 600px;
+  max-width: 600px;  
   line-height: 20.38px;
   font-family: "Karla", sans-serif;
   color: #E9E9E9;
@@ -160,7 +160,7 @@ body {
 }
 
 .icon-6 {
-  height: 240px; 
+  height: 236px; 
   width: 330px;   
   position: relative;
   padding-left: 2rem;
@@ -171,7 +171,7 @@ body {
 @media (max-width: 768px) {
   .background2 {
     min-height: 350vh;
-    background-image: url('../image/appdevbg.png');
+    background-image: url('../image/appdevbg.webp');
     background-size: cover;
     margin: 0;
     padding-top: 5px;
@@ -181,6 +181,7 @@ body {
     margin-bottom: 2rem;
     margin-left: -12.5rem;
     margin-right: 2rem;
+    padding-top: 4rem;
     transition: margin-left 0.5s ease;
   }
   .icon-6 {
@@ -200,23 +201,76 @@ body {
   }
 
   .steps.c {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    gap: 4rem;
   }
 
   .stepc {
-    margin-bottom: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stepc .text1,
+  .stepc .text2 {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
   }
 
   .stepc h2 {
-    font-size: 1.8rem;
+    font-size: 32px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .stepc p {
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 100%;
   }
 
-  .stepc img.icon {
-    width: 180px;
-    height: 180px;
+  .stepc img.icon,
+  .icon-6 {
+    width: 200px;
+    height: 200px;
+    order: -1; /* This ensures the icon always appears above the text */
+  }
+
+  .left-icon,
+  .right-icon {
+    order: -1;
+  }
+
+  .stepc:nth-child(even) .left-icon {
+    order: -1;
+  }
+
+  .icon-6 {
+    padding-left: 0;
+    width: 213px;
+    height: 152px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .steps.c {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+
+  .stepc h2 {
+    font-size: 28px;
+  }
+
+  .stepc p {
+    font-size: 14px;
+  }
+
+  .stepc img.icon,
+  .icon-6 {
+    width: 213px;
+    height: 152px;
   }
 }
